@@ -1,0 +1,280 @@
+p {
+  font-size: 16px;
+  color: $text-primary;
+}
+
+// button start
+.btn {
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+
+  &.btn-lg {
+    font-size: 20px;
+    padding: .25rem 2rem;
+  }
+}
+
+.btn-success {
+  background-color: $color-success;
+  border-color: $color-success;
+  &:hover {
+    background-color: darken($color-success, 10);
+    border-color: darken($color-success, 10);
+  }
+}
+
+.btn-primary {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  &:hover {
+    background-color: darken($color-primary, 10);
+    border-color: darken($color-primary, 10);
+  }
+}
+
+.btn-danger {
+  background-color: $color-danger;
+  border-color: $color-danger;
+  &:hover {
+    background-color: darken($color-danger, 10);
+    border-color: darken($color-danger, 10);
+  }
+}
+
+.more-btn {
+  font-weight: 700;
+  color: $text-primary;
+  img {
+    vertical-align: baseline-middle;
+    vertical-align: -webkit-baseline-middle;
+    margin-left: -30px;
+  }
+
+  i {
+    padding-left: 15px;
+  }
+}
+// button end
+
+
+// form start
+.form-control, .form-select {
+  color: #8E93A8;
+  font-size: 16px;
+  background-color: #F5F7FA;
+  border: 1px solid #D7E1EA;
+  border-radius: 5px;
+}
+// form end
+
+// card start
+.card {
+  border: none;
+  border-radius: 10px;
+
+  .card-body {
+    padding: 30px;
+  }
+
+  .card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: $text-primary;
+  }
+
+  .box {
+    background: #F5F7FA;
+    border-radius: 5px;
+    padding: 10px;
+    color: #161558;
+    font-size: 12px;
+
+    &.box-lg {
+      font-size: 16px;
+    }
+  }
+}
+
+
+// card.hotel start
+.card.hotel {
+  overflow: hidden;
+  .card-header {
+    padding: 30px;
+    background: $color-white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 2px 20px rgba(#161558, 0.05);
+    border-bottom: 0;
+
+    .avatar {
+      position: relative;
+      width: 75px;
+      .img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+      }
+      i {
+        width: 23px;
+        height: 23px;
+        background: $color-success;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: $color-white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    .card-title {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 12px;
+    }
+
+    a {
+      display: block;
+      position: absolute;
+      right: 30px;
+      color: $color-danger;
+    }
+  }
+
+  .card-body {
+    .box.box-lg {
+      font-size: 12px;
+      color: #8E93A8;
+      padding: 15px;
+    }
+
+    i {
+      color: #8E93A8;
+      font-size: 14px;
+      padding-right: 5px;
+    }
+
+    .select-col {
+      position: relative;
+      i {
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        transform: translateY(-50%);
+      }
+      .form-select {
+        font-size: 16px;
+        color: $text-primary;
+        padding-left: 35px;
+        
+        option {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+// card.hotel end
+
+
+// card.hotel-info start
+.card.hotel-info {
+  overflow: hidden;
+  .card-header {
+    padding: 30px 30px 0 30px;
+    background: $color-white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    // box-shadow: 0 2px 20px rgba(#161558, 0.05);
+    border-bottom: 0;
+
+    .avatar {
+      position: relative;
+      width: 60px;
+      .img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+      }
+      i {
+        width: 23px;
+        height: 23px;
+        background: $color-success;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: $color-white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    .card-title {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 12px;
+    }
+
+    a {
+      display: block;
+      position: absolute;
+      right: 30px;
+      color: $color-warning;
+    }
+  }
+
+  .card-body {
+    .archive {
+      li {
+        font-size: 16px;
+        color: $text-primary;
+        font-weight: 700;
+      }
+    }
+
+    .option {
+      padding: 30px 0;
+      .room-type {
+        width: 50%;
+        font-size: 16px;
+        font-weight: 400;
+        color: $text-primary;
+      }
+
+      .ref-status{
+        background: $color-success;
+        font-size: 10px;
+        font-weight: 400;
+        color: $color-white;
+        border-radius: 5px;
+        width: 50px;
+        padding: 1px 5px;
+        text-align: center;
+
+        &.not {
+          background: $color-danger;
+        }
+      }
+
+      .price {
+        font-size: 16px;
+        font-weight: 700;
+        color: $text-primary;
+      }
+    }
+
+    .hotel-info-footer {
+      margin-top: -20px;
+    }
+  }
+}
+// card.hotel-info end
+// card end

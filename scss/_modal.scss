@@ -1,0 +1,134 @@
+.modal-content {
+  border: none;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+// login modal start
+.login-modal {
+  p {
+    padding: 20px 0;
+    white-space: pre-line;
+    line-height: 2.5;
+  }
+
+  .login-option-link {
+    background: #fff;
+    border-radius: 10px;
+    padding: 13px;
+    width: 100%;
+    display: block;
+    box-shadow: 0 10px 20px rgba(41, 41, 56, 0.2);
+    height: 55px;
+  }
+
+  .divider {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 20%;
+      height: 1px;
+      background: #D7E1EA;
+      position: absolute;
+      top: 50%;
+      left: 55%;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      content: "";
+      width: 20%;
+      height: 1px;
+      background: #D7E1EA;
+      position: absolute;
+      top: 50%;
+      right: 55%;
+      transform: translateY(-50%);
+    }
+
+  }
+}
+// login modal end
+
+
+
+// package-modal modal start
+.package-modal {
+  .header {
+    p {
+      padding: 20px 0 30px 0;
+    }
+  }
+
+  .packages {
+    .card {
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(#161558, 0.2);
+      height: 100%;
+
+      .title {
+        font-size: 24px;
+        font-weight: 700;
+        color: $text-primary;
+
+        i {
+          color: #8E93A8;
+          padding-left: 5px;
+          font-size: 90%;
+        }
+      }
+
+      .price {
+        font-size: 32px;
+        font-weight: 700;
+        color: $text-primary;
+        padding: 25px 0;
+        
+        sub,
+        sup {
+          font-size: 12px;
+          font-weight: 400;
+          color: $text-primary;
+        }
+      }
+
+      ul {
+        padding-left: 1rem;
+        li {
+          font-size: 14px;
+          color: $text-primary;
+          padding: 7px 0;
+
+          i {
+            padding-right: 5px;
+            font-size: 20px;
+          }
+
+          i.fa-check {
+            color: $color-success;
+          }
+          i.fa-times {
+            color: $color-danger;
+          }
+        }
+      } 
+
+      .btn-lg {
+        padding: 12px 10px;
+        font-size: 16px;
+        margin-top: 25px;
+      }
+    }
+  }
+
+  .package-modal-footer {
+    background: $color-white;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 2px 64px rgba(#000000, 0.05);
+    margin: 20px 0 10px 0;
+  }
+}
+// package-modal modal end
+
