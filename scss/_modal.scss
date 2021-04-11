@@ -132,3 +132,142 @@
 }
 // package-modal modal end
 
+
+// currencyModal start
+#currencyModal {
+  .modal-content {
+    padding: 15px 0;
+  }
+  .modal-header {
+    padding: 15px 30px;
+    
+    .modal-title {
+      font-weight: 700;
+      color: $text-primary;
+    }
+  }
+  .modal-body {
+    padding: 30px;
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: $text-primary;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+      padding-left: 0;
+      padding-top: 10px;
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 14px;
+          color: #333;
+          font-weight: 400;
+          padding: 15px;
+
+          i {
+            font-size: 20px;
+            color: $color-success;
+            display: none;
+          }
+          
+          &:hover {
+            background: rgba(0,0,0,.06);
+          }
+          &.active {
+            background: rgba(0,0,0,.06);
+            i {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// currencyModal end
+
+
+
+// languageModal start
+#languageModal {
+  .modal-content {
+    padding: 15px 0;
+  }
+  .modal-header {
+    padding: 15px 30px;
+    
+    .modal-title {
+      font-weight: 700;
+      color: $text-primary;
+    }
+  }
+  .modal-body {
+    padding: 30px;
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: $text-primary;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+      padding-left: 0;
+      padding-top: 10px;
+
+      @media(max-width: 767px){
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @media(max-width: 991px) and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 14px;
+          color: #333;
+          font-weight: 400;
+          padding: 15px;
+
+          img {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin-right: 10px;
+            border: 1px solid rgba(0,0,0, 0.1);
+          }
+
+          i {
+            font-size: 20px;
+            color: $color-success;
+            display: none;
+          }
+          
+          &:hover {
+            background: rgba(0,0,0,.06);
+          }
+          &.active {
+            background: rgba(0,0,0,.06);
+            i {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// languageModal end
+

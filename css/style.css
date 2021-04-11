@@ -570,6 +570,144 @@ p {
   margin: 20px 0 10px 0;
 }
 
+#currencyModal .modal-content {
+  padding: 15px 0;
+}
+
+#currencyModal .modal-header {
+  padding: 15px 30px;
+}
+
+#currencyModal .modal-header .modal-title {
+  font-weight: 700;
+  color: #161558;
+}
+
+#currencyModal .modal-body {
+  padding: 30px;
+}
+
+#currencyModal .modal-body h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #161558;
+}
+
+#currencyModal .modal-body ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  padding-left: 0;
+  padding-top: 10px;
+}
+
+#currencyModal .modal-body ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  padding: 15px;
+}
+
+#currencyModal .modal-body ul li a i {
+  font-size: 20px;
+  color: #42BE65;
+  display: none;
+}
+
+#currencyModal .modal-body ul li a:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+#currencyModal .modal-body ul li a.active {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+#currencyModal .modal-body ul li a.active i {
+  display: block;
+}
+
+#languageModal .modal-content {
+  padding: 15px 0;
+}
+
+#languageModal .modal-header {
+  padding: 15px 30px;
+}
+
+#languageModal .modal-header .modal-title {
+  font-weight: 700;
+  color: #161558;
+}
+
+#languageModal .modal-body {
+  padding: 30px;
+}
+
+#languageModal .modal-body h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #161558;
+}
+
+#languageModal .modal-body ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  padding-left: 0;
+  padding-top: 10px;
+}
+
+@media (max-width: 767px) {
+  #languageModal .modal-body ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  #languageModal .modal-body ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+#languageModal .modal-body ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  padding: 15px;
+}
+
+#languageModal .modal-body ul li a img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#languageModal .modal-body ul li a i {
+  font-size: 20px;
+  color: #42BE65;
+  display: none;
+}
+
+#languageModal .modal-body ul li a:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+#languageModal .modal-body ul li a.active {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+#languageModal .modal-body ul li a.active i {
+  display: block;
+}
+
 /*===// end of modal section === */
 /*=== home section start === */
 #home {
@@ -741,6 +879,12 @@ p {
 
 /*===// end of signIn-5 section === */
 /*=== signIn-6 section start === */
+@media (min-width: 1200px) {
+  #signIn-6 .side-widget.col-xl-3 {
+    min-width: 450px;
+  }
+}
+
 #signIn-6 .side-widget .info-widget {
   border-bottom: 1px solid #D7E1EA;
   padding-bottom: 20px;
@@ -776,7 +920,7 @@ p {
 #signIn-6 .side-widget .info-widget .archive li {
   background: #fff;
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 8px 15px;
   font-size: 20px;
   font-weight: 700;
   color: #8E93A8;
@@ -854,6 +998,12 @@ p {
 
 #signIn-6 .main-data .table-chart-analysis {
   padding: 100px 0;
+}
+
+@media (min-width: 1200px) and (max-width: 1832px) {
+  #signIn-6 .col-xl-9 {
+    width: calc(100% - 450px);
+  }
 }
 
 /*===// end of signIn-6 section === */

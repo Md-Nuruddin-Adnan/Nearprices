@@ -1,5 +1,10 @@
 #signIn-6 {
   .side-widget {
+    @media (min-width: 1200px){
+      &.col-xl-3 {
+        min-width: 450px;
+      }
+    }
     .info-widget {
       border-bottom: 1px solid #D7E1EA;
       padding-bottom: 20px;
@@ -32,7 +37,7 @@
         li {
           background: $color-white;
           border-radius: 10px;
-          padding: 10px 20px;
+          padding: 8px 15px;
           font-size: 20px;
           font-weight: 700;
           color: #8E93A8;
@@ -113,4 +118,13 @@
     }
   }
   // main-data end
+
+  @media(min-width: 1200px) and (max-width: 1832px){
+    .col-xl-9 {
+      width: calc(100% - 450px)
+    }
+  }
 }
+
+// 1840px = 75%;
+// 1200px = 61%;
