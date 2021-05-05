@@ -2,6 +2,9 @@
   background: url(../images/home_bg.png) no-repeat right center/cover;
   min-height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &:before {
     content: '';
@@ -21,8 +24,8 @@
         color: $text-primary;
         font-weight: 700;
         padding-top: 50px;
-        @media(min-width: 992px){
-          padding-top: 100px;
+        @media(max-width: 575px){
+          font-size: 35px;
         }
       }
       p {

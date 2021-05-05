@@ -4,6 +4,25 @@ p {
 }
 
 // button start
+.btn.btn-collapse {
+  width: 30px;
+  height: 60px;
+  background: #F5F7FA;
+  border-radius: 5px;
+  position: absolute;
+  top: 50px;
+  left: 12px;
+  z-index: 1;
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
+  font-size: 25px;
+  color: $color-primary;
+
+  i {
+    margin-left: -15px;
+  }
+
+}
+
 .btn {
   border-radius: 10px;
   font-weight: 700;
@@ -185,6 +204,19 @@ p {
 // card.hotel-info start
 .card.hotel-info {
   overflow: hidden;
+  position: relative;
+
+  .link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    font-size: 50px;
+    visibility: hidden;
+    transition: all 0.3s linear;
+  }
+
   .card-header {
     padding: 30px 30px 0 30px;
     background: $color-white;
@@ -221,13 +253,6 @@ p {
     }
     p {
       font-size: 12px;
-    }
-
-    a {
-      display: block;
-      position: absolute;
-      right: 30px;
-      color: $color-warning;
     }
   }
 
@@ -275,6 +300,19 @@ p {
       margin-top: -20px;
     }
   }
+
+  &.plus-active {
+    background: #B2C1E8;
+
+    .link {
+      visibility: visible;
+    }
+
+    .card-header {
+      background: #B2C1E8;
+    }
+  }
+
 }
 // card.hotel-info end
 // card end

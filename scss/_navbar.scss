@@ -5,6 +5,53 @@
     padding-left: 15px;
   }
 
+  .info-header {
+    .avatar {
+      margin-right: 10px;
+      img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+      }
+    }
+    .card-title {
+      font-size: 20px;
+      color: $text-primary;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 12px;
+      color: $text-primary;
+      font-weight: 400;
+    }
+
+  }
+
+  .archive {
+    li {
+      background: $color-white;
+      border-radius: 10px;
+      padding: 8px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #8E93A8;
+      box-shadow: 0 2px 64px rgba(#161558, 0.05);
+      margin: 0 7px;
+      white-space: nowrap;
+      img {
+        padding-bottom: 4px;
+      }
+    }
+  }
+
+  .form-check-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: $text-primary;
+    padding-right: 10px;
+  }
+
   .nav-link.user{
     position: relative;
     img {
@@ -26,6 +73,9 @@
     .navbar-nav {
       align-items: center;
       margin-left: 100px;
+      li {
+        padding-left: 10px;
+      }
 
       @media(max-width: 1399px){
         flex-direction: row;
@@ -41,7 +91,7 @@
 
       .flag {
         img {
-          width: 60px;
+          width: 45px;
         }
       }
 
@@ -55,68 +105,16 @@
           padding: 2px 5px;
           border-radius: 2px;
           position: absolute;
-          bottom: -13px;
-          left: -15px;
+          bottom: -5px;
+          left: -12px;
         }
       }
       
     }
 
-    .select-col{
-      width: 20%;
-      padding: 0 30px;
-      position: relative;
-
-      @media (max-width: 1399px){
-        width: 100%;
-      }
-
-      @media (min-width: 1200px) and (max-width: 1599px){
-        padding: 0 5px;
-      }
-
-      @media (min-width: 1600px){
-        width: 22%;
-        padding: 0 15px;
-      }
-
-      i {
-        position: absolute;
-        top: 50%;
-        left: 15px;
-        transform: translateY(-50%);
-        color: #8E93A8;
 
 
-        @media (min-width: 1600px){
-          left: 25px;
-        }
-  
-      }
-
-      .form-select {
-        padding: 12px 0 12px 40px;
-      }
-    }
-
-    .header-form {
-      @media(max-width: 1399px){
-        flex-direction: column;
-
-        .select-col, .btn-box {
-          margin: 15px 0;
-        }
-
-        .select-col {
-          padding: 0 10px;
-        }
-      }
-
-      .btn-lg {
-        padding: 0.5rem 2rem;
-        white-space: nowrap;
-      }
-    }
+ 
 
   }
 }

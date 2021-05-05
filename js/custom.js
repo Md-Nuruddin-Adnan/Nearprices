@@ -47,3 +47,15 @@ $('#dateRange').daterangepicker({
 // data range end
 
 
+// collapse sidebar start
+{
+   let collapsedBtn = document.getElementById('btn-collapse')
+   collapsedBtn.addEventListener('click', function(e){
+      let fullDiv =  collapsedBtn.parentElement;
+      let sideDiv = collapsedBtn.parentElement.parentElement.children[0]
+      console.log(sideDiv);
+   })
+}
+// collapse sidebar end
+
+
