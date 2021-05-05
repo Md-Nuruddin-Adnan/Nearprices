@@ -1,0 +1,30 @@
+.dashboard-content {
+  padding: 30px;
+  .dashboard-form {
+
+    .input-item {
+      width: 80%;
+      @media (max-width: 991px){
+        width: 100%;
+      }
+      i {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        color: #8E93A8;
+
+        @media (max-width: 991px){
+          top: 35%;
+        }
+      }
+
+    }
+
+    .btn-lg {
+      padding: 0.3rem 2rem;
+      white-space: nowrap;
+    }
+    
+  }
+}

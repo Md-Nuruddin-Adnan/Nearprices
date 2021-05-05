@@ -22,13 +22,13 @@
 @import 'modal';
 /*===// end of modal section === */
 
-/*=== home section start === */
-@import 'home';
-/*===// end of home section === */
 
-/*=== loader section start === */
+/*=== pages section start === */
+@import 'home';
 @import 'loader';
-/*===// end of loader section === */
+@import 'dashboard';
+/*===// end of pages section === */
+
 
 /*=== signIn-5 section start === */
 @import 'signIn-5';

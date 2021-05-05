@@ -4,3 +4,21 @@
 .text-danger {
   color: $color-danger;
 }
+
+
+@media (min-width: 1200px){
+  .side-widget {
+    min-width: 400px;
+  }
+  .main-content {
+    max-width: calc(100% - 400px);
+  }
+
+  .w-150-lg{
+    width: 150px!important;
+  }
+}
+
+.ps-30{
+  padding-left: 30px;
+}

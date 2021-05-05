@@ -41,6 +41,22 @@ body {
   color: #FC3F38;
 }
 
+@media (min-width: 1200px) {
+  .side-widget {
+    min-width: 400px;
+  }
+  .main-content {
+    max-width: calc(100% - 400px);
+  }
+  .w-150-lg {
+    width: 150px !important;
+  }
+}
+
+.ps-30 {
+  padding-left: 30px;
+}
+
 /*===// end of utility css === */
 /*=== common css start === */
 p {
@@ -64,6 +80,16 @@ p {
 
 .btn.btn-collapse i {
   margin-left: -15px;
+}
+
+@media (max-width: 1199px) {
+  .btn.btn-collapse {
+    display: none;
+  }
+}
+
+.btn.btn-collapse:focus {
+  box-shadow: none;
 }
 
 .btn {
@@ -260,7 +286,7 @@ p {
 }
 
 .card.hotel-info .card-header {
-  padding: 30px 30px 0 30px;
+  padding: 20px 20px 0 20px;
   background: #fff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -294,10 +320,16 @@ p {
 .card.hotel-info .card-header .card-title {
   font-size: 20px;
   margin-bottom: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .card.hotel-info .card-header p {
   font-size: 12px;
+}
+
+.card.hotel-info .card-body {
+  padding: 0 20px 20px 20px;
 }
 
 .card.hotel-info .card-body .archive li {
@@ -352,6 +384,18 @@ p {
 
 .card.hotel-info.plus-active .card-header {
   background: #B2C1E8;
+}
+
+.card.hotel-info.minus-active {
+  background: #e8b2b2;
+}
+
+.card.hotel-info.minus-active .link {
+  visibility: visible;
+}
+
+.card.hotel-info.minus-active .card-header {
+  background: #e8b2b2;
 }
 
 /*===// end of common css === */
@@ -734,7 +778,7 @@ p {
 }
 
 /*===// end of modal section === */
-/*=== home section start === */
+/*=== pages section start === */
 #home {
   background: url(../images/home_bg.png) no-repeat right center/cover;
   min-height: 100vh;
@@ -804,8 +848,6 @@ p {
   }
 }
 
-/*===// end of home section === */
-/*=== loader section start === */
 .loader-body {
   min-height: 100vh;
   display: grid;
@@ -838,7 +880,40 @@ p {
   }
 }
 
-/*===// end of loader section === */
+.dashboard-content {
+  padding: 30px;
+}
+
+.dashboard-content .dashboard-form .input-item {
+  width: 80%;
+}
+
+@media (max-width: 991px) {
+  .dashboard-content .dashboard-form .input-item {
+    width: 100%;
+  }
+}
+
+.dashboard-content .dashboard-form .input-item i {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #8E93A8;
+}
+
+@media (max-width: 991px) {
+  .dashboard-content .dashboard-form .input-item i {
+    top: 35%;
+  }
+}
+
+.dashboard-content .dashboard-form .btn-lg {
+  padding: 0.3rem 2rem;
+  white-space: nowrap;
+}
+
+/*===// end of pages section === */
 /*=== signIn-5 section start === */
 #signIn-5 .info {
   padding: 10px 0;
