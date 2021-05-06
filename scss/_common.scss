@@ -69,6 +69,16 @@ p {
   }
 }
 
+.btn-outline-danger {
+  background-color: transparent;
+  border-color: $color-danger;
+  color: $color-danger;
+  &:hover {
+    background-color: darken($color-danger, 10);
+    border-color: darken($color-danger, 10);
+  }
+}
+
 .more-btn {
   font-weight: 700;
   color: $text-primary;

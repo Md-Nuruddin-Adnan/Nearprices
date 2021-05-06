@@ -133,6 +133,17 @@ p {
   border-color: #fb0f06;
 }
 
+.btn-outline-danger {
+  background-color: transparent;
+  border-color: #FC3F38;
+  color: #FC3F38;
+}
+
+.btn-outline-danger:hover {
+  background-color: #fb0f06;
+  border-color: #fb0f06;
+}
+
 .more-btn {
   font-weight: 700;
   color: #161558;
@@ -1060,108 +1071,145 @@ p {
   white-space: nowrap;
 }
 
-/*===// end of pages section === */
-/*=== signIn-5 section start === */
-#signIn-5 .info {
+#setting .autopilot {
   padding: 10px 0;
 }
 
-#signIn-5 .info .card-title {
+#setting .autopilot .card-title {
   margin-bottom: 20px;
 }
 
-#signIn-5 .info label {
+#setting .autopilot label {
+  font-size: 16px;
+  color: #8E93A8;
+  margin-bottom: 5px;
+}
+
+#setting .autopilot .form-control {
+  font-size: 16px;
+  max-width: 80px;
+}
+
+#setting .autopilot .form-control::placeholder {
+  color: #8E93A8;
+}
+
+#setting .autopilot span {
+  font-size: 16px;
+  color: #161558;
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+#setting .info {
+  padding: 10px 0;
+}
+
+#setting .info .card-title {
+  margin-bottom: 20px;
+}
+
+#setting .info ul li {
+  font-size: 12px;
+  color: #8E93A8;
+  padding: 0 15px;
+}
+
+#setting .info label {
   font-size: 16px;
   color: #8E93A8;
   padding-bottom: 5px;
 }
 
-#signIn-5 .info label i {
+#setting .info label i {
   padding-left: 10px;
   color: #D7E1EA;
 }
 
-#signIn-5 .info .form-control, #signIn-5 .info .form-control::placeholder, #signIn-5 .info .form-select {
+#setting .info .form-control, #setting .info .form-control::placeholder, #setting .info .form-select {
   font-size: 16px;
   color: #161558;
 }
 
-#signIn-5 .info .btn {
-  font-size: 16px;
-  padding: .5rem 2.5rem;
-  max-width: 130px;
-}
-
-#signIn-5 .package-price {
+#setting .package-price {
   padding: 10px 0;
 }
 
-#signIn-5 .package-price p {
+#setting .package-price p {
   font-size: 12px;
   color: #8E93A8;
 }
 
-#signIn-5 .package-price p b {
+#setting .package-price p b {
   font-size: 16px;
   color: #161558;
   padding-left: 10px;
 }
 
 @media (min-width: 992px) {
-  #signIn-5 .package-price .action {
+  #setting .package-price .action {
     width: 40%;
   }
 }
 
-#signIn-5 .package-price .btn {
+#setting .package-price .btn {
   font-size: 16px;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  max-width: 130px;
+  padding: 0.5rem 0;
+  width: 150px;
 }
 
-#signIn-5 .invoice {
+#setting .invoice {
   padding: 10px 0;
 }
 
-#signIn-5 .invoice .table tr:last-child {
+#setting .invoice ul li {
+  font-size: 12px;
+  color: #8E93A8;
+  padding: 0 15px;
+}
+
+#setting .invoice .table tr:last-child {
   border: transparent;
 }
 
-#signIn-5 .invoice .table > :not(caption) > * > * {
+#setting .invoice .table > :not(caption) > * > * {
   padding: 1rem .5rem;
 }
 
-#signIn-5 .invoice label {
+#setting .invoice label {
   font-size: 16px;
   color: #8E93A8;
   padding-bottom: 5px;
 }
 
-#signIn-5 .invoice label i {
+#setting .invoice label i {
   padding-left: 10px;
   color: #D7E1EA;
 }
 
-#signIn-5 .invoice h4 {
+#setting .invoice h4 {
   font-size: 16px;
   color: #161558;
   font-weight: 700;
 }
 
-#signIn-5 .invoice .download {
+#setting .invoice .download {
   color: #2953C0;
   font-size: 25px;
   vertical-align: bottom;
 }
 
 @media (min-width: 992px) {
-  #signIn-5 .invoice .download {
+  #setting .invoice .download {
     width: 35%;
   }
 }
 
-/*===// end of signIn-5 section === */
+#setting .collapse-btn {
+  color: #8E93A8;
+}
+
+/*===// end of pages section === */
 /*=== signIn-6 section start === */
 @media (min-width: 1200px) {
   #signIn-6 .side-widget.col-xl-3 {

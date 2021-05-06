@@ -80,3 +80,23 @@ $('#dateRange').daterangepicker({
 // tooltip end
 
 
+// setting collapse start
+{
+    if(document.querySelectorAll('#setting .collapse-btn')){
+        let btn = document.querySelectorAll('#setting .collapse-btn');
+        [...btn].forEach((item) => {
+            item.addEventListener('click', (e) =>{
+                if(item.innerHTML !== '<i class="fas fa-compress"></i>'){
+                    item.innerHTML = '<i class="fas fa-compress"></i>'
+                }else {
+                    item.innerHTML = '<i class="fas fa-expand"></i>'
+                }
+               
+            })
+        })
+    }
+
+}
+// setting collapse end
+
+
