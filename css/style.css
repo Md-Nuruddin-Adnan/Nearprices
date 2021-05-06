@@ -399,7 +399,7 @@ p {
 }
 
 /*===// end of common css === */
-/*=== navbar section start === */
+/*=== component start === */
 .navbar {
   box-shadow: 0 2px 64px rgba(0, 0, 0, 0.05);
 }
@@ -516,8 +516,6 @@ p {
   left: -12px;
 }
 
-/*===// end of navbar section === */
-/*=== modal section start === */
 .modal-content {
   border: none;
   border-radius: 20px;
@@ -777,7 +775,156 @@ p {
   display: block;
 }
 
-/*===// end of modal section === */
+.table .accordion-button {
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+  width: auto;
+}
+
+.table .accordion-button::after {
+  margin-left: 15px;
+}
+
+.table tr th {
+  color: #161558;
+}
+
+.table tr td {
+  color: #8E93A8;
+}
+
+.table tr.tr-blue th,
+.table tr.tr-blue td {
+  color: #2953C0;
+}
+
+.table .th-blue {
+  font-weight: 700;
+  color: #2953C0;
+}
+
+.table .max-width-50 {
+  max-width: 50px;
+}
+
+.table .dot-blue i,
+.table .dot-yellow i,
+.table .dot-pink i {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.table .dot-blue i {
+  color: #22359F;
+}
+
+.table .dot-pink i {
+  color: #D91A73;
+}
+
+.table .dot-yellow i {
+  color: #F7DD16;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #fff;
+  box-shadow: 0 10px 20px rgba(22, 21, 88, 0.2);
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #fff;
+  box-shadow: 0 10px 20px rgba(22, 21, 88, 0.2);
+}
+
+.tooltip.bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: #fff;
+  box-shadow: 0 10px 20px rgba(22, 21, 88, 0.2);
+}
+
+.tooltip.bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: #fff;
+  box-shadow: 0 10px 20px rgba(22, 21, 88, 0.2);
+  top: -5px;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+.tooltip > .tooltip-inner {
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(22, 21, 88, 0.2);
+  border-radius: 7px;
+  padding: 5px 8px;
+  opacity: 1;
+}
+
+.tooltip > .tooltip-inner p {
+  color: #161558;
+  font-size: 12px;
+}
+
+.tooltip > .tooltip-inner h6 {
+  color: #42BE65;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+.footer .footer-top {
+  padding-bottom: 5px;
+}
+
+.footer .footer-top img {
+  width: 120px;
+}
+
+@media (min-width: 992px) {
+  .footer .footer-bottom p {
+    padding-right: 30px;
+  }
+}
+
+.footer .footer-bottom .right ul {
+  padding-left: 0;
+}
+
+@media (min-width: 992px) {
+  .footer .footer-bottom .right ul li:first-child {
+    padding-right: 30px;
+  }
+}
+
+.footer .footer-bottom .right ul li a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #161558;
+  transition: all 0.2s linear;
+}
+
+.footer .footer-bottom .right ul li a:hover {
+  color: #2953C0;
+}
+
+/*===// end of component === */
 /*=== pages section start === */
 #home {
   background: url(../images/home_bg.png) no-repeat right center/cover;
@@ -1146,58 +1293,3 @@ p {
 /*===// end of signIn-6 section === */
 /*=== ? section start === */
 /*===// end of ? section === */
-/*=== footer section start === */
-.footer {
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-
-@media (min-width: 1200px) {
-  .footer {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-
-@media (max-width: 991px) {
-  .footer {
-    text-align: center;
-  }
-}
-
-.footer .footer-top {
-  padding-bottom: 5px;
-}
-
-.footer .footer-top img {
-  width: 120px;
-}
-
-@media (min-width: 992px) {
-  .footer .footer-bottom p {
-    padding-right: 30px;
-  }
-}
-
-.footer .footer-bottom .right ul {
-  padding-left: 0;
-}
-
-@media (min-width: 992px) {
-  .footer .footer-bottom .right ul li:first-child {
-    padding-right: 30px;
-  }
-}
-
-.footer .footer-bottom .right ul li a {
-  font-size: 16px;
-  font-weight: 700;
-  color: #161558;
-  transition: all 0.2s linear;
-}
-
-.footer .footer-bottom .right ul li a:hover {
-  color: #2953C0;
-}
-
-/*===// end of footer section === */

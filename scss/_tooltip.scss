@@ -1,0 +1,44 @@
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: $color-white;
+  box-shadow: 0 10px 20px rgba(#161558, 0.2);
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: $color-white;
+  box-shadow: 0 10px 20px rgba(#161558, 0.2);
+}
+
+.tooltip.bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: $color-white;
+  box-shadow: 0 10px 20px rgba(#161558, 0.2);
+}
+
+.tooltip.bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: $color-white;
+  box-shadow: 0 10px 20px rgba(#161558, 0.2);
+  top: -5px;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+.tooltip > .tooltip-inner{
+  background: $color-white;
+  box-shadow: 0 10px 20px rgba(#161558, 0.2);
+  border-radius: 7px;
+  padding: 5px 8px;
+  opacity: 1;
+}
+
+.tooltip > .tooltip-inner p {
+  color: $text-primary;
+  font-size: 12px;
+}
+
+.tooltip > .tooltip-inner h6 {
+  color: $color-success;
+  font-weight: 700;
+  font-size: 16px;
+}

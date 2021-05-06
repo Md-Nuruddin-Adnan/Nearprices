@@ -1,0 +1,51 @@
+.table .accordion-button {
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+  width: auto;
+}
+
+.table .accordion-button::after {
+  margin-left: 15px;
+}
+
+.table tr th {
+  color: $text-primary;
+}
+
+.table tr td {
+  color: #8E93A8;
+}
+
+.table tr.tr-blue th,
+.table tr.tr-blue td{
+  color: $color-primary;
+}
+
+.table .th-blue {
+  font-weight: 700;
+  color: $color-primary;
+}
+
+.table .max-width-50 {
+  max-width: 50px;
+}
+
+.table .dot-blue i,
+.table .dot-yellow i,
+.table .dot-pink i {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.table .dot-blue i {
+  color: #22359F;
+}
+
+.table .dot-pink i {
+  color: #D91A73;
+}
+
+.table .dot-yellow i {
+  color: #F7DD16;
+}

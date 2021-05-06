@@ -14,13 +14,14 @@
 @import 'common';
 /*===// end of common css === */
 
-/*=== navbar section start === */
+/*=== component start === */
 @import 'navbar';
-/*===// end of navbar section === */
-
-/*=== modal section start === */
 @import 'modal';
-/*===// end of modal section === */
+@import 'table';
+@import 'tooltip';
+
+@import 'footer';
+/*===// end of component === */
 
 
 /*=== pages section start === */
@@ -43,8 +44,4 @@
 
 /*===// end of ? section === */
 
-
-/*=== footer section start === */
-@import 'footer';
-/*===// end of footer section === */
 
