@@ -805,13 +805,15 @@
           <div class="card-body">
             <div class="d-flex align-items-center justify-content-between info-header">
               <h3 class="card-title">Info</h3>
-              <ul class="d-lg-flex d-md-none align-items-center justify-content-between">
-                <li>Dmytro Zakharov</li>
-                <li>dmytroatwork@gmail.com</li>
-                <li>Italy</li>
-                <li>XOCO</li>
-              </ul>
-              <button class="btn collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#info" aria-expanded="true" aria-controls="info"><i class="fas fa-expand"></i></button>
+              <div id="info-ul" class="collapse show">
+                <ul class="d-lg-flex d-none align-items-center justify-content-between">
+                  <li>Dmytro Zakharov</li>
+                  <li>dmytroatwork@gmail.com</li>
+                  <li>Italy</li>
+                  <li>XOCO</li>
+                </ul>
+              </div>
+              <button class="btn collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#info, #info-ul" aria-expanded="true" aria-controls="info"><i class="fas fa-expand"></i></button>
             </div>
             <form action="" class="info-body collapse" id="info">
               <div>
@@ -878,10 +880,12 @@
           <div class="card-body">
             <div class="d-flex align-items-center justify-content-between info-header">
               <h3 class="card-title">Invoice</h3>
-              <ul class="d-lg-flex d-md-none align-items-center justify-content-between">
-                <li>Paid: <b class="text-danger"> 3/5 </b></li>
-              </ul>
-              <button class="btn collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#invoice" aria-expanded="true" aria-controls="invoice"><i class="fas fa-expand"></i></button>
+              <div id="invoice-ul" class="collapse show">
+                <ul class="d-lg-flex d-none align-items-center justify-content-between">
+                  <li>Paid: <b class="text-danger"> 3/5 </b></li>
+                </ul>
+              </div>
+              <button class="btn collapse-btn" type="button" data-bs-toggle="collapse" data-bs-target="#invoice, #invoice-ul" aria-expanded="true" aria-controls="invoice"><i class="fas fa-expand"></i></button>
             </div>
             <div class="invoice-body collapse" id="invoice">
               <table class="table">
@@ -932,7 +936,7 @@
         <!-- === package-price section start === -->
         <div class="card mb-4 package-price">
           <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center text-nowrap">
               <h3 class="card-title">Premium</h3>
               <p>Renewal <b>17 Jan 2021</b></p>
               <h3 class="card-title">$ 5</h3>

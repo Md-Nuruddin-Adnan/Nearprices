@@ -61,31 +61,6 @@
 
   }
 
-  .package-price {
-    padding: 10px 0;
-    p {
-      font-size: 12px;
-      color: #8E93A8;
-
-      b {
-        font-size: 16px;
-        color: $text-primary;
-        padding-left: 10px;
-      }
-    }
-    
-    @media(min-width: 992px){
-      .action {
-        width: 40%;
-      }
-    }
-
-    .btn {
-      font-size: 16px;
-      padding: 0.5rem 0;
-      width: 150px;
-     }
-  }
 
   .invoice {
     padding: 10px 0;
@@ -131,6 +106,37 @@
         width: 35%;
       }
     }
+  }
+
+  .package-price {
+    @media(max-width:767px){
+      .d-flex {
+        flex-direction: column;
+      }
+    }
+    padding: 10px 0;
+    p {
+      font-size: 12px;
+      color: #8E93A8;
+
+      b {
+        font-size: 16px;
+        color: $text-primary;
+        padding-left: 10px;
+      }
+    }
+    
+    @media(min-width: 992px){
+      .action {
+        width: 40%;
+      }
+    }
+
+    .btn {
+      font-size: 16px;
+      padding: 0.5rem 0;
+      width: 150px;
+     }
   }
 
   .collapse-btn {

@@ -1131,33 +1131,6 @@ p {
   color: #161558;
 }
 
-#setting .package-price {
-  padding: 10px 0;
-}
-
-#setting .package-price p {
-  font-size: 12px;
-  color: #8E93A8;
-}
-
-#setting .package-price p b {
-  font-size: 16px;
-  color: #161558;
-  padding-left: 10px;
-}
-
-@media (min-width: 992px) {
-  #setting .package-price .action {
-    width: 40%;
-  }
-}
-
-#setting .package-price .btn {
-  font-size: 16px;
-  padding: 0.5rem 0;
-  width: 150px;
-}
-
 #setting .invoice {
   padding: 10px 0;
 }
@@ -1203,6 +1176,39 @@ p {
   #setting .invoice .download {
     width: 35%;
   }
+}
+
+#setting .package-price {
+  padding: 10px 0;
+}
+
+@media (max-width: 767px) {
+  #setting .package-price .d-flex {
+    flex-direction: column;
+  }
+}
+
+#setting .package-price p {
+  font-size: 12px;
+  color: #8E93A8;
+}
+
+#setting .package-price p b {
+  font-size: 16px;
+  color: #161558;
+  padding-left: 10px;
+}
+
+@media (min-width: 992px) {
+  #setting .package-price .action {
+    width: 40%;
+  }
+}
+
+#setting .package-price .btn {
+  font-size: 16px;
+  padding: 0.5rem 0;
+  width: 150px;
 }
 
 #setting .collapse-btn {
