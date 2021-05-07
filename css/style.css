@@ -1215,6 +1215,233 @@ p {
   color: #8E93A8;
 }
 
+#configuration {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#configuration .footer {
+  margin-top: auto;
+}
+
+.configuration .card {
+  border-radius: 20px;
+}
+
+@media (min-width: 1200px) {
+  .configuration .container {
+    max-width: 1170px;
+  }
+}
+
+.configuration .configured-btn {
+  height: 50px;
+  width: 100%;
+  padding: 0;
+  line-height: 50px;
+  background: #161558;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.configuration.configuration-1 .heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #161558;
+  margin-top: 30px;
+}
+
+.configuration .plan .plan-item .plan-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #161558;
+}
+
+.configuration .plan .plan-item .plan-name i {
+  color: #8E93A8;
+  font-size: 18px;
+}
+
+.configuration .plan .plan-item ul {
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+
+.configuration .plan .plan-item ul li {
+  font-size: 14px;
+  color: #161558;
+  padding: 4px;
+}
+
+.configuration .plan .plan-item ul li i {
+  color: #42BE65;
+  font-size: 14px;
+  padding-right: 5px;
+}
+
+.configuration .plan .plan-item p {
+  font-size: 14px;
+  color: #161558;
+}
+
+.configuration .plan .plan-item .pricing h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #161558;
+}
+
+.configuration .plan .plan-item .pricing h2 sup {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.configuration .plan .plan-item .pricing h2 sub {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.configuration .plan .plan-item .pricing p {
+  padding: 30px 0 10px 0;
+}
+
+.configuration .plan .plan-item .pricing .form-select {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.configuration .plan .plan-item .pricing .btn-outline-danger {
+  width: 130px;
+  height: 50px;
+  padding: 0;
+  line-height: 50px;
+  border-radius: 10px;
+}
+
+.configuration .payment-method .heading {
+  background: #F5F7FA;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+@media (max-width: 575px) {
+  .configuration .payment-method .heading .d-flex {
+    flex-direction: column;
+  }
+}
+
+.configuration .payment-method .heading h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #161558;
+  padding-right: 20px;
+}
+
+.configuration .payment-method .heading .card-link {
+  color: #2953C0;
+}
+
+.configuration .payment-method .heading .pricing {
+  font-size: 20px;
+  font-weight: 700;
+  color: #161558;
+}
+
+.configuration .payment-method .heading .pricing sub, .configuration .payment-method .heading .pricing sup {
+  font-weight: 400;
+}
+
+.configuration .payment-method .heading p {
+  color: #161558;
+  padding-top: 10px;
+}
+
+.configuration .payment-method .choose-method .title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #161558;
+  margin: 40px 0 30px 0;
+}
+
+.configuration .payment-method .choose-method ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  padding-left: 0;
+}
+
+@media (max-width: 767px) {
+  .configuration .payment-method .choose-method ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+.configuration .payment-method .choose-method ul li {
+  padding: 10px 15px;
+  border: 1px solid #D7E1EA;
+  border-radius: 5px;
+}
+
+.configuration .payment-method .choose-method ul li:focus, .configuration .payment-method .choose-method ul li:focus-within, .configuration .payment-method .choose-method ul li.active {
+  border-color: #2953C0;
+}
+
+.configuration .payment-method .choose-method ul li .form-check {
+  padding-left: 0;
+}
+
+.configuration .payment-method .choose-method ul li .form-check label {
+  font-size: 16px;
+  color: #161558;
+}
+
+.configuration .payment-method .choose-method ul li .form-check label i {
+  padding-right: 10px;
+}
+
+.configuration .payment-method .choose-method ul li .form-check-input[type=radio] {
+  border-radius: 2px;
+  border-width: 2px;
+}
+
+.configuration .payment-method .choose-method ul li .form-check-input:checked[type=radio] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+
+.configuration .total-plan-summary .heading {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.configuration .total-plan-summary p {
+  font-size: 15px;
+}
+
+.configuration .total-plan-summary ul {
+  padding: 15px 0;
+  margin: 20px 0;
+}
+
+.configuration .total-plan-summary ul li {
+  font-size: 14px;
+  color: #161558;
+  padding: 4px;
+}
+
+.configuration .total-plan-summary ul i {
+  color: #42BE65;
+  font-size: 14px;
+  padding-right: 5px;
+}
+
+.configuration .total-plan-summary .total-pay {
+  font-size: 23px;
+  color: #161558;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 /*===// end of pages section === */
 /*=== signIn-6 section start === */
 @media (min-width: 1200px) {

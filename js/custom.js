@@ -50,22 +50,24 @@ $('#dateRange').daterangepicker({
 // collapse sidebar start
 {
    let collapsedBtn = document.getElementById('btn-collapse');
-   let fullDiv =  collapsedBtn.parentElement;
-   let sideDiv = collapsedBtn.parentElement.parentElement.children[0]
-   let sideDivWidth = sideDiv.offsetWidth;
-
-   collapsedBtn.addEventListener('click', function(e){
-     sideDiv.classList.toggle('d-none');
-     fullDiv.classList.toggle('w-100');
-     if(collapsedBtn.children[0].style.transform !== 'rotate(180deg)'){
-         collapsedBtn.children[0].style.transform = 'rotate(180deg)'
-         fullDiv.style.maxWidth = '100%';
-     }else {
-         collapsedBtn.children[0].style.transform = 'rotate(0deg)'
-         fullDiv.style.maxWidth = `calc(100% - ${sideDivWidth}px)`;
-     }
-
-   })
+   if(collapsedBtn != null || collapsedBtn != undefined){
+    let fullDiv =  collapsedBtn.parentElement;
+    let sideDiv = collapsedBtn.parentElement.parentElement.children[0]
+    let sideDivWidth = sideDiv.offsetWidth;
+ 
+    collapsedBtn.addEventListener('click', function(e){
+      sideDiv.classList.toggle('d-none');
+      fullDiv.classList.toggle('w-100');
+      if(collapsedBtn.children[0].style.transform !== 'rotate(180deg)'){
+          collapsedBtn.children[0].style.transform = 'rotate(180deg)'
+          fullDiv.style.maxWidth = '100%';
+      }else {
+          collapsedBtn.children[0].style.transform = 'rotate(0deg)'
+          fullDiv.style.maxWidth = `calc(100% - ${sideDivWidth}px)`;
+      }
+ 
+    })
+   }
 }
 // collapse sidebar end
 
