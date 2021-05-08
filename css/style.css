@@ -11,12 +11,12 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+h1, h2, h3, h4, h5, h6, ol, ul, p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul .accordion li .btn p, #reputation .hotel-details .accordion li .text ul .btn p, address, strong, i {
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-ul, li {
+ul, li, #reputation .hotel-details .accordion li .btn {
   list-style: none;
 }
 
@@ -34,15 +34,15 @@ body {
 /*===// end of config css === */
 /*=== utility css start === */
 .text-success {
-  color: #42BE65;
+  color: #42BE65 !important;
 }
 
 .text-danger {
-  color: #FC3F38;
+  color: #FC3F38 !important;
 }
 
 .text-warning {
-  color: #DB8B2F;
+  color: #DB8B2F !important;
 }
 
 .bg-success {
@@ -75,7 +75,7 @@ body {
 
 /*===// end of utility css === */
 /*=== common css start === */
-p {
+p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul .accordion li .btn p, #reputation .hotel-details .accordion li .text ul .btn p {
   font-size: 16px;
   color: #161558;
 }
@@ -252,7 +252,7 @@ p {
   margin-bottom: 0;
 }
 
-.card.hotel .card-header p {
+.card.hotel .card-header p, .card.hotel .card-header #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li .card.hotel .card-header p, .card.hotel .card-header #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn .card.hotel .card-header p {
   font-size: 12px;
 }
 
@@ -351,7 +351,7 @@ p {
   text-overflow: ellipsis;
 }
 
-.card.hotel-info .card-header p {
+.card.hotel-info .card-header p, .card.hotel-info .card-header #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li .card.hotel-info .card-header p, .card.hotel-info .card-header #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn .card.hotel-info .card-header p {
   font-size: 12px;
 }
 
@@ -359,7 +359,7 @@ p {
   padding: 0 20px 20px 20px;
 }
 
-.card.hotel-info .card-body .archive li {
+.card.hotel-info .card-body .archive li, .card.hotel-info .card-body .archive #reputation .hotel-details .accordion li .btn, #reputation .hotel-details .accordion li .card.hotel-info .card-body .archive .btn {
   font-size: 16px;
   color: #161558;
   font-weight: 700;
@@ -455,13 +455,13 @@ p {
   margin-bottom: 0;
 }
 
-.navbar .info-header p {
+.navbar .info-header p, .navbar .info-header #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li .navbar .info-header p, .navbar .info-header #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn .navbar .info-header p {
   font-size: 12px;
   color: #161558;
   font-weight: 400;
 }
 
-.navbar .archive li {
+.navbar .archive li, .navbar .archive #reputation .hotel-details .accordion li .btn, #reputation .hotel-details .accordion li .navbar .archive .btn {
   background: #fff;
   border-radius: 10px;
   padding: 8px;
@@ -473,7 +473,7 @@ p {
   white-space: nowrap;
 }
 
-.navbar .archive li img {
+.navbar .archive li img, .navbar .archive #reputation .hotel-details .accordion li .btn img, #reputation .hotel-details .accordion li .navbar .archive .btn img {
   padding-bottom: 4px;
 }
 
@@ -505,7 +505,7 @@ p {
   margin-left: 100px;
 }
 
-.navbar.navbar-details .navbar-nav li {
+.navbar.navbar-details .navbar-nav li, .navbar.navbar-details .navbar-nav #reputation .hotel-details .accordion li .btn, #reputation .hotel-details .accordion li .navbar.navbar-details .navbar-nav .btn {
   padding-left: 10px;
 }
 
@@ -549,7 +549,7 @@ p {
   padding: 30px;
 }
 
-.login-modal p {
+.login-modal p, .login-modal #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li .login-modal p, .login-modal #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn .login-modal p {
   padding: 20px 0;
   white-space: pre-line;
   line-height: 2.5;
@@ -591,7 +591,7 @@ p {
   transform: translateY(-50%);
 }
 
-.package-modal .header p {
+.package-modal .header p, .package-modal .header #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li .package-modal .header p, .package-modal .header #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn .package-modal .header p {
   padding: 20px 0 30px 0;
 }
 
@@ -631,22 +631,22 @@ p {
   padding-left: 1rem;
 }
 
-.package-modal .packages .card ul li {
+.package-modal .packages .card ul li, .package-modal .packages .card ul #reputation .hotel-details .accordion li .btn, #reputation .hotel-details .accordion li .package-modal .packages .card ul .btn {
   font-size: 14px;
   color: #161558;
   padding: 7px 0;
 }
 
-.package-modal .packages .card ul li i {
+.package-modal .packages .card ul li i, .package-modal .packages .card ul #reputation .hotel-details .accordion li .btn i, #reputation .hotel-details .accordion li .package-modal .packages .card ul .btn i {
   padding-right: 5px;
   font-size: 20px;
 }
 
-.package-modal .packages .card ul li i.fa-check {
+.package-modal .packages .card ul li i.fa-check, .package-modal .packages .card ul #reputation .hotel-details .accordion li .btn i.fa-check, #reputation .hotel-details .accordion li .package-modal .packages .card ul .btn i.fa-check {
   color: #42BE65;
 }
 
-.package-modal .packages .card ul li i.fa-times {
+.package-modal .packages .card ul li i.fa-times, .package-modal .packages .card ul #reputation .hotel-details .accordion li .btn i.fa-times, #reputation .hotel-details .accordion li .package-modal .packages .card ul .btn i.fa-times {
   color: #FC3F38;
 }
 
@@ -695,7 +695,7 @@ p {
   padding-top: 10px;
 }
 
-#currencyModal .modal-body ul li a {
+#currencyModal .modal-body ul li a, #currencyModal .modal-body ul #reputation .hotel-details .accordion li .btn a, #reputation .hotel-details .accordion li #currencyModal .modal-body ul .btn a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -705,21 +705,21 @@ p {
   padding: 15px;
 }
 
-#currencyModal .modal-body ul li a i {
+#currencyModal .modal-body ul li a i, #currencyModal .modal-body ul #reputation .hotel-details .accordion li .btn a i, #reputation .hotel-details .accordion li #currencyModal .modal-body ul .btn a i {
   font-size: 20px;
   color: #42BE65;
   display: none;
 }
 
-#currencyModal .modal-body ul li a:hover {
+#currencyModal .modal-body ul li a:hover, #currencyModal .modal-body ul #reputation .hotel-details .accordion li .btn a:hover, #reputation .hotel-details .accordion li #currencyModal .modal-body ul .btn a:hover {
   background: rgba(0, 0, 0, 0.06);
 }
 
-#currencyModal .modal-body ul li a.active {
+#currencyModal .modal-body ul li a.active, #currencyModal .modal-body ul #reputation .hotel-details .accordion li .btn a.active, #reputation .hotel-details .accordion li #currencyModal .modal-body ul .btn a.active {
   background: rgba(0, 0, 0, 0.06);
 }
 
-#currencyModal .modal-body ul li a.active i {
+#currencyModal .modal-body ul li a.active i, #currencyModal .modal-body ul #reputation .hotel-details .accordion li .btn a.active i, #reputation .hotel-details .accordion li #currencyModal .modal-body ul .btn a.active i {
   display: block;
 }
 
@@ -766,7 +766,7 @@ p {
   }
 }
 
-#languageModal .modal-body ul li a {
+#languageModal .modal-body ul li a, #languageModal .modal-body ul #reputation .hotel-details .accordion li .btn a, #reputation .hotel-details .accordion li #languageModal .modal-body ul .btn a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -776,7 +776,7 @@ p {
   padding: 15px;
 }
 
-#languageModal .modal-body ul li a img {
+#languageModal .modal-body ul li a img, #languageModal .modal-body ul #reputation .hotel-details .accordion li .btn a img, #reputation .hotel-details .accordion li #languageModal .modal-body ul .btn a img {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -784,21 +784,21 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#languageModal .modal-body ul li a i {
+#languageModal .modal-body ul li a i, #languageModal .modal-body ul #reputation .hotel-details .accordion li .btn a i, #reputation .hotel-details .accordion li #languageModal .modal-body ul .btn a i {
   font-size: 20px;
   color: #42BE65;
   display: none;
 }
 
-#languageModal .modal-body ul li a:hover {
+#languageModal .modal-body ul li a:hover, #languageModal .modal-body ul #reputation .hotel-details .accordion li .btn a:hover, #reputation .hotel-details .accordion li #languageModal .modal-body ul .btn a:hover {
   background: rgba(0, 0, 0, 0.06);
 }
 
-#languageModal .modal-body ul li a.active {
+#languageModal .modal-body ul li a.active, #languageModal .modal-body ul #reputation .hotel-details .accordion li .btn a.active, #reputation .hotel-details .accordion li #languageModal .modal-body ul .btn a.active {
   background: rgba(0, 0, 0, 0.06);
 }
 
-#languageModal .modal-body ul li a.active i {
+#languageModal .modal-body ul li a.active i, #languageModal .modal-body ul #reputation .hotel-details .accordion li .btn a.active i, #reputation .hotel-details .accordion li #languageModal .modal-body ul .btn a.active i {
   display: block;
 }
 
@@ -996,7 +996,7 @@ p {
   opacity: 1;
 }
 
-.tooltip > .tooltip-inner p {
+.tooltip > .tooltip-inner p, .tooltip > .tooltip-inner #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li .tooltip > .tooltip-inner p, #reputation .hotel-details .text ul .accordion li .btn .tooltip > .tooltip-inner p, .tooltip > .tooltip-inner #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn .tooltip > .tooltip-inner p {
   color: #161558;
   font-size: 12px;
 }
@@ -1034,7 +1034,7 @@ p {
 }
 
 @media (min-width: 992px) {
-  .footer .footer-bottom p {
+  .footer .footer-bottom p, .footer .footer-bottom #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li .footer .footer-bottom p, .footer .footer-bottom #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn .footer .footer-bottom p {
     padding-right: 30px;
   }
 }
@@ -1044,19 +1044,19 @@ p {
 }
 
 @media (min-width: 992px) {
-  .footer .footer-bottom .right ul li:first-child {
+  .footer .footer-bottom .right ul li:first-child, .footer .footer-bottom .right ul #reputation .hotel-details .accordion li .btn:first-child, #reputation .hotel-details .accordion li .footer .footer-bottom .right ul .btn:first-child {
     padding-right: 30px;
   }
 }
 
-.footer .footer-bottom .right ul li a {
+.footer .footer-bottom .right ul li a, .footer .footer-bottom .right ul #reputation .hotel-details .accordion li .btn a, #reputation .hotel-details .accordion li .footer .footer-bottom .right ul .btn a {
   font-size: 16px;
   font-weight: 700;
   color: #161558;
   transition: all 0.2s linear;
 }
 
-.footer .footer-bottom .right ul li a:hover {
+.footer .footer-bottom .right ul li a:hover, .footer .footer-bottom .right ul #reputation .hotel-details .accordion li .btn a:hover, #reputation .hotel-details .accordion li .footer .footer-bottom .right ul .btn a:hover {
   color: #2953C0;
 }
 
@@ -1095,7 +1095,7 @@ p {
   }
 }
 
-#home .banner .banner-content p {
+#home .banner .banner-content p, #home .banner .banner-content #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li #home .banner .banner-content p, #home .banner .banner-content #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn #home .banner .banner-content p {
   font-size: 20px;
   color: #161558;
   padding: 20px 0 30px 0;
@@ -1234,7 +1234,7 @@ p {
   margin-bottom: 20px;
 }
 
-#setting .info ul li {
+#setting .info ul li, #setting .info ul #reputation .hotel-details .accordion li .btn, #reputation .hotel-details .accordion li #setting .info ul .btn {
   font-size: 12px;
   color: #8E93A8;
   padding: 0 15px;
@@ -1260,7 +1260,7 @@ p {
   padding: 10px 0;
 }
 
-#setting .invoice ul li {
+#setting .invoice ul li, #setting .invoice ul #reputation .hotel-details .accordion li .btn, #reputation .hotel-details .accordion li #setting .invoice ul .btn {
   font-size: 12px;
   color: #8E93A8;
   padding: 0 15px;
@@ -1313,12 +1313,12 @@ p {
   }
 }
 
-#setting .package-price p {
+#setting .package-price p, #setting .package-price #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li #setting .package-price p, #setting .package-price #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn #setting .package-price p {
   font-size: 12px;
   color: #8E93A8;
 }
 
-#setting .package-price p b {
+#setting .package-price p b, #setting .package-price #reputation .hotel-details .text ul li p b, #reputation .hotel-details .text ul li #setting .package-price p b, #setting .package-price #reputation .hotel-details .accordion li .text ul .btn p b, #reputation .hotel-details .accordion li .text ul .btn #setting .package-price p b {
   font-size: 16px;
   color: #161558;
   padding-left: 10px;
@@ -1394,19 +1394,19 @@ p {
   margin-bottom: 15px;
 }
 
-.configuration .plan .plan-item ul li {
+.configuration .plan .plan-item ul li, .configuration .plan .plan-item ul #reputation .hotel-details .accordion li .btn, #reputation .hotel-details .accordion li .configuration .plan .plan-item ul .btn {
   font-size: 14px;
   color: #161558;
   padding: 4px;
 }
 
-.configuration .plan .plan-item ul li i {
+.configuration .plan .plan-item ul li i, .configuration .plan .plan-item ul #reputation .hotel-details .accordion li .btn i, #reputation .hotel-details .accordion li .configuration .plan .plan-item ul .btn i {
   color: #42BE65;
   font-size: 14px;
   padding-right: 5px;
 }
 
-.configuration .plan .plan-item p {
+.configuration .plan .plan-item p, .configuration .plan .plan-item #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li .configuration .plan .plan-item p, .configuration .plan .plan-item #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn .configuration .plan .plan-item p {
   font-size: 14px;
   color: #161558;
 }
@@ -1427,7 +1427,7 @@ p {
   font-weight: 400;
 }
 
-.configuration .plan .plan-item .pricing p {
+.configuration .plan .plan-item .pricing p, .configuration .plan .plan-item .pricing #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li .configuration .plan .plan-item .pricing p, .configuration .plan .plan-item .pricing #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn .configuration .plan .plan-item .pricing p {
   padding: 30px 0 10px 0;
 }
 
@@ -1477,7 +1477,7 @@ p {
   font-weight: 400;
 }
 
-.configuration .payment-method .heading p {
+.configuration .payment-method .heading p, .configuration .payment-method .heading #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li .configuration .payment-method .heading p, .configuration .payment-method .heading #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn .configuration .payment-method .heading p {
   color: #161558;
   padding-top: 10px;
 }
@@ -1502,35 +1502,35 @@ p {
   }
 }
 
-.configuration .payment-method .choose-method ul li {
+.configuration .payment-method .choose-method ul li, .configuration .payment-method .choose-method ul #reputation .hotel-details .accordion li .btn, #reputation .hotel-details .accordion li .configuration .payment-method .choose-method ul .btn {
   padding: 10px 15px;
   border: 1px solid #D7E1EA;
   border-radius: 5px;
 }
 
-.configuration .payment-method .choose-method ul li:focus, .configuration .payment-method .choose-method ul li:focus-within, .configuration .payment-method .choose-method ul li.active {
+.configuration .payment-method .choose-method ul li:focus, .configuration .payment-method .choose-method ul #reputation .hotel-details .accordion li .btn:focus, #reputation .hotel-details .accordion li .configuration .payment-method .choose-method ul .btn:focus, .configuration .payment-method .choose-method ul li:focus-within, .configuration .payment-method .choose-method ul #reputation .hotel-details .accordion li .btn:focus-within, #reputation .hotel-details .accordion li .configuration .payment-method .choose-method ul .btn:focus-within, .configuration .payment-method .choose-method ul li.active, .configuration .payment-method .choose-method ul #reputation .hotel-details .accordion li .active.btn, #reputation .hotel-details .accordion li .configuration .payment-method .choose-method ul .active.btn {
   border-color: #2953C0;
 }
 
-.configuration .payment-method .choose-method ul li .form-check {
+.configuration .payment-method .choose-method ul li .form-check, .configuration .payment-method .choose-method ul #reputation .hotel-details .accordion li .btn .form-check, #reputation .hotel-details .accordion li .configuration .payment-method .choose-method ul .btn .form-check {
   padding-left: 0;
 }
 
-.configuration .payment-method .choose-method ul li .form-check label {
+.configuration .payment-method .choose-method ul li .form-check label, .configuration .payment-method .choose-method ul #reputation .hotel-details .accordion li .btn .form-check label, #reputation .hotel-details .accordion li .configuration .payment-method .choose-method ul .btn .form-check label {
   font-size: 16px;
   color: #161558;
 }
 
-.configuration .payment-method .choose-method ul li .form-check label i {
+.configuration .payment-method .choose-method ul li .form-check label i, .configuration .payment-method .choose-method ul #reputation .hotel-details .accordion li .btn .form-check label i, #reputation .hotel-details .accordion li .configuration .payment-method .choose-method ul .btn .form-check label i {
   padding-right: 10px;
 }
 
-.configuration .payment-method .choose-method ul li .form-check-input[type=radio] {
+.configuration .payment-method .choose-method ul li .form-check-input[type=radio], .configuration .payment-method .choose-method ul #reputation .hotel-details .accordion li .btn .form-check-input[type=radio], #reputation .hotel-details .accordion li .configuration .payment-method .choose-method ul .btn .form-check-input[type=radio] {
   border-radius: 2px;
   border-width: 2px;
 }
 
-.configuration .payment-method .choose-method ul li .form-check-input:checked[type=radio] {
+.configuration .payment-method .choose-method ul li .form-check-input:checked[type=radio], .configuration .payment-method .choose-method ul #reputation .hotel-details .accordion li .btn .form-check-input:checked[type=radio], #reputation .hotel-details .accordion li .configuration .payment-method .choose-method ul .btn .form-check-input:checked[type=radio] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
 }
 
@@ -1616,7 +1616,7 @@ p {
   margin: 10px 0;
 }
 
-.configuration .total-plan-summary p {
+.configuration .total-plan-summary p, .configuration .total-plan-summary #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li .configuration .total-plan-summary p, .configuration .total-plan-summary #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn .configuration .total-plan-summary p {
   font-size: 15px;
 }
 
@@ -1625,7 +1625,7 @@ p {
   margin: 20px 0;
 }
 
-.configuration .total-plan-summary ul li {
+.configuration .total-plan-summary ul li, .configuration .total-plan-summary ul #reputation .hotel-details .accordion li .btn, #reputation .hotel-details .accordion li .configuration .total-plan-summary ul .btn {
   font-size: 14px;
   color: #161558;
   padding: 4px;
@@ -1710,7 +1710,7 @@ p {
   padding: 0 10px;
 }
 
-.channel-manager .header ul li {
+.channel-manager .header ul li, .channel-manager .header ul #reputation .hotel-details .accordion li .btn, #reputation .hotel-details .accordion li .channel-manager .header ul .btn {
   font-size: 16px;
   color: #8E93A8;
 }
@@ -1740,6 +1740,18 @@ p {
   }
 }
 
+#reputation .top-info {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  color: #D7E1EA;
+  font-size: 110%;
+}
+
+#reputation .top-info:hover {
+  color: #b6c8d8;
+}
+
 #reputation .analytics {
   padding: 60px 0;
 }
@@ -1756,7 +1768,7 @@ p {
   padding: 20px 0 5px 0;
 }
 
-#reputation .analytics .chart-analytics p {
+#reputation .analytics .chart-analytics p, #reputation .analytics .chart-analytics .hotel-details .text ul li p, #reputation .hotel-details .text ul li .analytics .chart-analytics p, #reputation .analytics .chart-analytics .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn .analytics .chart-analytics p {
   font-size: 12px;
   color: #161558;
 }
@@ -1808,11 +1820,11 @@ p {
   padding: 20px 0;
 }
 
-#reputation .analytics .tab-analysis .text ul li {
+#reputation .analytics .tab-analysis .text ul li, #reputation .analytics .tab-analysis .text ul .hotel-details .accordion li .btn, #reputation .hotel-details .accordion li .analytics .tab-analysis .text ul .btn {
   padding: 5px 0;
 }
 
-#reputation .analytics .tab-analysis .text ul li span {
+#reputation .analytics .tab-analysis .text ul li span, #reputation .hotel-details .accordion li .analytics .tab-analysis .text ul .btn span {
   font-size: 12px;
   padding-left: 15px;
   color: #FC3F38;
@@ -1822,6 +1834,193 @@ p {
   min-width: 100px;
   height: 8px;
   border-radius: 0.5rem;
+}
+
+#reputation .hotel-details {
+  margin-bottom: 60px;
+}
+
+#reputation .hotel-details .card {
+  box-shadow: 0 2px 64px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+#reputation .hotel-details .hotel-details-header {
+  font-size: 16px;
+  font-weight: 700;
+  color: #161558;
+  padding-bottom: 15px;
+}
+
+#reputation .hotel-details .accordion li, #reputation .hotel-details .accordion li .btn {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#reputation .hotel-details .accordion li .btn:focus {
+  box-shadow: none;
+}
+
+#reputation .hotel-details .accordion .card.accordion-target {
+  background: #F5F7FA;
+  padding: 0px 20px;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+#reputation .hotel-details .accordion .card.accordion-target .table thead th,
+#reputation .hotel-details .accordion .card.accordion-target .table thead td {
+  font-size: 12px;
+  color: #161558;
+  border-bottom: 1px solid #8E93A8;
+}
+
+#reputation .hotel-details .accordion .card.accordion-target .table tbody::before {
+  content: "_";
+  display: block;
+  color: transparent;
+  line-height: 15px;
+  text-indent: -99999px;
+}
+
+#reputation .hotel-details .accordion .card.accordion-target .table tbody td {
+  font-size: 14px;
+  color: #161558;
+}
+
+#reputation .hotel-details .accordion .card.accordion-target .table tbody th {
+  font-size: 14px;
+  color: #8E93A8;
+}
+
+#reputation .hotel-details .accordion .card.accordion-target .table tbody .progress {
+  min-width: 100px;
+  height: 8px;
+  border-radius: 0.5rem;
+}
+
+#reputation .hotel-details .show-more-btn {
+  font-size: 16px;
+  font-weight: 700;
+  color: #8E93A8;
+  margin-top: 20px;
+}
+
+#reputation .hotel-details .show-more-btn:hover {
+  color: #161558;
+}
+
+#reputation .hotel-details .text {
+  height: 100%;
+}
+
+#reputation .hotel-details .text .title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #161558;
+}
+
+#reputation .hotel-details .text p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul .accordion li .btn p, #reputation .hotel-details .accordion li .text ul .btn p {
+  font-size: 14px;
+  color: #161558;
+  padding: 15px 0;
+  line-height: 24px;
+}
+
+#reputation .hotel-details .text ul li h4, #reputation .hotel-details .text ul .accordion li .btn h4, #reputation .hotel-details .accordion li .text ul .btn h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #161558;
+  min-width: 100px;
+}
+
+#reputation .filter .filter-full {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+}
+
+@media (max-width: 767px) {
+  #reputation .filter .filter-full {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  #reputation .filter .filter-full {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+#reputation .map-bar {
+  margin-top: 20px;
+}
+
+#reputation .map-bar .card {
+  box-shadow: 0 2px 64px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+#reputation .map-bar .show-more-btn {
+  font-size: 16px;
+  font-weight: 700;
+  color: #8E93A8;
+  margin-top: 20px;
+}
+
+#reputation .map-bar .show-more-btn:hover {
+  color: #161558;
+}
+
+#reputation .feedback .card {
+  box-shadow: 0 2px 64px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+#reputation .feedback .feedback-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#reputation .feedback .feedback-header h3 i {
+  color: #161558;
+  padding-right: 5px;
+}
+
+#reputation .feedback .feedback-header ul li, #reputation .feedback .feedback-header ul .hotel-details .accordion li .btn, #reputation .hotel-details .accordion li .feedback .feedback-header ul .btn {
+  padding: 0 10px;
+  font-size: 12px;
+  color: #161558;
+}
+
+#reputation .feedback .feedback-header .link a {
+  padding: 0 7px;
+}
+
+#reputation .feedback .feedbck-body p, #reputation .feedback .feedbck-body .hotel-details .text ul li p, #reputation .hotel-details .text ul li .feedback .feedbck-body p, #reputation .feedback .feedbck-body .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn .feedback .feedbck-body p {
+  padding: 20px 0;
+  font-size: 16px;
+  color: #161558;
+}
+
+#reputation .feedback .feedbck-body .link {
+  padding-bottom: 20px;
+}
+
+#reputation .feedback .feedbck-body .link a {
+  font-weight: 700;
+  font-size: 12px;
+  padding-right: 20px;
+}
+
+#reputation .feedback .feedback-footer {
+  padding-top: 20px;
+}
+
+#reputation .feedback .feedback-footer em {
+  font-size: 16px;
+  color: #8E93A8;
+  font-weight: 300;
 }
 
 /*===// end of pages === */
