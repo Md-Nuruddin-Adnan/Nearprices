@@ -41,6 +41,22 @@ body {
   color: #FC3F38;
 }
 
+.text-warning {
+  color: #DB8B2F;
+}
+
+.bg-success {
+  background-color: #42BE65 !important;
+}
+
+.bg-danger {
+  background-color: #FC3F38 !important;
+}
+
+.bg-warning {
+  background-color: #DB8B2F !important;
+}
+
 @media (min-width: 1200px) {
   .side-widget {
     min-width: 400px;
@@ -1714,135 +1730,98 @@ p {
   }
 }
 
-/*===// end of pages === */
-/*=== signIn-6 section start === */
+#reputation {
+  background: #fff;
+}
+
 @media (min-width: 1200px) {
-  #signIn-6 .side-widget.col-xl-3 {
-    min-width: 450px;
+  #reputation .container {
+    max-width: 1170px;
   }
 }
 
-#signIn-6 .side-widget .info-widget {
-  border-bottom: 1px solid #D7E1EA;
-  padding-bottom: 20px;
-}
-
-#signIn-6 .side-widget .info-widget .info-header .avatar {
-  margin-right: 10px;
-}
-
-#signIn-6 .side-widget .info-widget .info-header .avatar img {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-}
-
-#signIn-6 .side-widget .info-widget .info-header .card-title {
-  font-size: 20px;
-  color: #161558;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-
-#signIn-6 .side-widget .info-widget .info-header p {
-  font-size: 12px;
-  color: #161558;
-  font-weight: 400;
-}
-
-#signIn-6 .side-widget .info-widget .archive {
-  padding: 20px 0;
-}
-
-#signIn-6 .side-widget .info-widget .archive li {
-  background: #fff;
-  border-radius: 10px;
-  padding: 8px 15px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #8E93A8;
-}
-
-#signIn-6 .side-widget .info-widget .archive li img {
-  padding-bottom: 4px;
-}
-
-#signIn-6 .side-widget .info-widget .option .room-type {
-  font-size: 16px;
-  font-weight: 400;
-  color: #161558;
-  width: 45%;
-}
-
-#signIn-6 .side-widget .info-widget .option i {
-  color: #8E93A8;
-}
-
-#signIn-6 .side-widget .info-widget .option .caption {
-  font-size: 16px;
-  font-weight: 400;
-  color: #161558;
-}
-
-#signIn-6 .side-widget .info-widget .option .capacity {
-  font-size: 16px;
-  font-weight: 400;
-  color: #161558;
-}
-
-#signIn-6 .side-widget .info-widget .option .price {
-  font-size: 20px;
-  font-weight: 700;
-  color: #2953C0;
-}
-
-#signIn-6 .side-widget .info-widget .option .price i {
-  color: #42BE65;
-  padding-right: 10px;
-}
-
-#signIn-6 .main-data {
-  padding: 30px;
-}
-
-#signIn-6 .main-data .select-col {
-  position: relative;
-  width: 250px;
-  margin-left: auto;
-  background: #F5F7FA;
-}
-
-#signIn-6 .main-data .select-col i {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-}
-
-#signIn-6 .main-data .select-col .form-select {
-  font-size: 16px;
-  color: #161558;
-  padding-left: 40px;
-}
-
-#signIn-6 .main-data .select-col .form-select option {
-  padding-left: 20px;
-}
-
-#signIn-6 .main-data .line-chart-analysis {
+#reputation .analytics {
   padding: 60px 0;
 }
 
-#signIn-6 .main-data .table-chart-analysis {
-  padding: 100px 0;
+#reputation .analytics .chart-analytics {
+  text-align: center;
+  padding-bottom: 30px;
 }
 
-@media (min-width: 1200px) and (max-width: 1832px) {
-  #signIn-6 .col-xl-9 {
-    width: calc(100% - 450px);
-  }
+#reputation .analytics .chart-analytics .title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #161558;
+  padding: 20px 0 5px 0;
 }
 
-/*===// end of signIn-6 section === */
-/*=== ? section start === */
-/*===// end of ? section === */
+#reputation .analytics .chart-analytics p {
+  font-size: 12px;
+  color: #161558;
+}
+
+#reputation .analytics .tab-analysis .nav {
+  padding: 20px 0 15px 0;
+}
+
+#reputation .analytics .tab-analysis .nav .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  padding: 0;
+}
+
+#reputation .analytics .tab-analysis .nav .nav-link .top-icon {
+  font-size: 20px;
+  color: #D7E1EA;
+  padding-right: 10px;
+}
+
+#reputation .analytics .tab-analysis .nav .nav-link.active .top-icon {
+  color: #161558;
+}
+
+#reputation .analytics .tab-analysis .nav .nav-link h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #D7E1EA;
+}
+
+#reputation .analytics .tab-analysis .nav .nav-link h3 sub {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+#reputation .analytics .tab-analysis .text .title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #161558;
+  padding-bottom: 10px;
+}
+
+#reputation .analytics .tab-analysis .text p {
+  font-size: 14px;
+}
+
+#reputation .analytics .tab-analysis .text ul {
+  padding: 20px 0;
+}
+
+#reputation .analytics .tab-analysis .text ul li {
+  padding: 5px 0;
+}
+
+#reputation .analytics .tab-analysis .text ul li span {
+  font-size: 12px;
+  padding-left: 15px;
+  color: #FC3F38;
+}
+
+#reputation .analytics .tab-analysis .progress {
+  min-width: 100px;
+  height: 8px;
+  border-radius: 0.5rem;
+}
+
+/*===// end of pages === */

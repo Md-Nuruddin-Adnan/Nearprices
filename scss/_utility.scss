@@ -4,6 +4,19 @@
 .text-danger {
   color: $color-danger;
 }
+.text-warning {
+  color: $color-warning;
+}
+
+.bg-success {
+  background-color: $color-success!important;
+}
+.bg-danger {
+  background-color: $color-danger!important;
+}
+.bg-warning {
+  background-color: $color-warning!important;
+}
 
 
 @media (min-width: 1200px){

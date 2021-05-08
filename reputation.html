@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Nearprices | sign in - 6</title>
+  <title>Nearprices | Reputation </title>
   <link rel='shortcut icon' href='images/logo.png' type='image/x-icon'>
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="signIn-6">
+<body id="reputation">
 
   <!-- === header section start === -->
   <header>
@@ -24,7 +23,39 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
+         
+
+          <div class="info-header d-flex align-items-center pt-xxl-0 pt-4">
+            <div class="avatar">
+              <img src="images/hotel_avatar.png" alt="hotel_avatar" class="img-fluid">
+            </div>
+            <div>
+              <h3 class="card-title">Hotel Milano centrale</h3>
+              <p>Via Friuli 84, Milano 20135</p>
+            </div>
+          </div>
+
+          <ul class="archive d-flex justify-content-between">
+            <li><img src="images/icon/sunglass_dark.png" alt="icon" class="img-fluid"> 8.9</li>
+            <li><img src="images/icon/booking_dark.png" alt="icon" class="img-fluid"> 8.9</li>
+            <li><img src="images/icon/tripadvisor_dark.png" alt="icon" class="img-fluid"> 8.9</li>
+            <li><img src="images/icon/cup_dark.png" alt="icon" class="img-fluid"> 1240</li>
+          </ul>
+
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link"><img src="images/icon/cup_blue.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><img src="images/icon/share.png" alt=""></a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Autopilot</label>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              </div>
+            </li>
             <li class="nav-item me-3">
               <a class="nav-link price p-0" href="#" data-bs-toggle="modal" data-bs-target="#currencyModal">
                 $
@@ -42,39 +73,6 @@
               </a>
             </li>
           </ul>
-          <form action="" class="d-flex w-100 justify-content-between header-form">
-            <div class="select-col">
-              <select class="form-select">
-                <option selected>Period</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-            <div class="select-col">
-              <i class="fal fa-moon"></i>
-              <select class="form-select">
-                <option> Single Room </option>
-                <option> Suite Room </option>
-              </select>
-            </div>
-            <div class="select-col">
-              <i class="fal fa-user-friends"></i>
-              <select class="form-select">
-                <option> 1 </option>
-                <option selected> 2 </option>
-              </select>
-            </div>
-            <div class="select-col">
-              <select class="form-select">
-                <option selected> Refundable </option>
-                <option> Non Refundable </option>
-              </select>
-            </div>
-            <div class="btn-box">
-              <button class="btn btn-lg btn-primary"><i class="far fa-search"></i> Find</button>
-            </div>
-          </form>
         </div>
       </div>
     </nav>
@@ -610,238 +608,92 @@
   </header>
   <!-- ===//end of header section === -->
  
-  <div class="container-fluid mb-4">
-    <div class="row px-lg-3">
-      <div class="col-xl-3 side-widget mt-4">
-        <!-- === side widget section start === -->
-
-
-        <!-- === info-widget section start === -->
-        <div class="info-widget mb-4">
-          <div class="info-header d-flex align-items-center">
-            <div class="avatar">
-              <img src="images/hotel_avatar.png" alt="hotel_avatar" class="img-fluid">
+  <!-- === analytics section start === -->
+  <section class="analytics">
+    <div class="container">
+      <div class="row chart-analytics border-bottom">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/reputation/chart/pie.png" alt="" class="img-fluid">
+              <h3 class="title">Feedback</h3>
+              <p>24h 7-days <strong>All time</strong> </p>
             </div>
-            <div>
-              <h3 class="card-title">Hotel Milano centrale</h3>
-              <p>Via Friuli 84, Milano 20135</p>
-            </div>
-          </div>
-          <ul class="archive d-flex justify-content-between">
-            <li><img src="images/icon/sunglass_dark.png" alt="icon" class="img-fluid"> 8.9</li>
-            <li><img src="images/icon/booking_dark.png" alt="icon" class="img-fluid"> 8.9</li>
-            <li><img src="images/icon/tripadvisor_dark.png" alt="icon" class="img-fluid"> 8.9</li>
-            <li><img src="images/icon/Flat_dark.png" alt="icon" class="img-fluid"> 1240</li>
-          </ul>
-          <div class="option d-flex justify-content-between align-items-center">
-            <div class="room-type">
-              <img src="images/icon/single_bed.png" alt="icon" class="img-fluid">
-              <span>Single Room </span>
-            </div>
-            <div class="caption"><i class="fal fa-moon"></i> 1 </div>
-            <div class="capacity"><i class="fal fa-user-friends"></i> 2 </div>
-            <div class="price"><i class="far fa-usd-circle"></i> <span>$ 312.00</span> </div>
-          </div>
-
-          <div class="info-footer text-center">
-            <a href="#" class="btn more-btn">
-              <img src="images/icon/crown.png" alt="icon" class="img-fluid">  
-              <p>Show more <i class="far fa-chevron-down"></i></p>
-            </a>
-          </div>
-
-        </div>
-        <!-- ===//end of info-widget section === -->
-
-
-        <!-- === hotel-info section start === -->
-        <div class="card hotel-info mb-4">
-          <div class="card-header d-flex align-items-center">
-            <div class="avatar">
-              <img src="images/hotel_avatar.png" alt="hotel_avatar" class="img-fluid">
-            </div>
-            <div>
-              <h3 class="card-title">Hotel Milano centrale</h3>
-              <p>Via Friuli 84, Milano 20135</p>
-            </div>
-            <a href="#"><i class="far fa-plus-circle"></i></a>
-          </div>
-          <div class="card-body">
-            <ul class="archive d-flex justify-content-between">
-              <li><img src="images/icon/sunglass_light.png" alt="icon" class="img-fluid"> 8.9</li>
-              <li><img src="images/icon/booking_light.png" alt="icon" class="img-fluid"> 8.9</li>
-              <li><img src="images/icon/tripadvisor_light.png" alt="icon" class="img-fluid"> 8.9</li>
-              <li><img src="images/icon/Flat_light.png" alt="icon" class="img-fluid"> 1240</li>
-            </ul>
-
-            <div class="option">
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <div class="room-type">
-                  <img src="images/icon/single_bed.png" alt="icon" class="img-fluid">
-                  <span>Single Room </span>
-                </div>
-                <div class="ref-status not"> Not Ref </div>
-                <div class="price">$ 312.00</span> </div>
-              </div>
-
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="room-type">
-                  <img src="images/icon/king_bed.png" alt="icon" class="img-fluid">
-                  <span> King Room </span>
-                </div>
-                <div class="ref-status"> Ref </div>
-                <div class="price">$ 312.00</span> </div>
-              </div>
-
-            </div>
-
-            <div class="hotel-info-footer text-center">
-              <a href="#" class="btn more-btn">
-                <img src="images/icon/crown.png" alt="icon" class="img-fluid">  
-                <p>Show more <i class="far fa-chevron-down"></i></p>
-              </a>
+            <div class="col-md-6">
+              <img src="images/reputation/chart/verticle-bar.png" alt="" class="img-fluid">
+              <h3 class="title">Comments</h3>
+              <p> <strong>24h</strong> 7-days All time</p>
             </div>
           </div>
         </div>
-        <div class="card hotel-info mb-4">
-          <div class="card-header d-flex align-items-center">
-            <div class="avatar">
-              <img src="images/hotel_avatar.png" alt="hotel_avatar" class="img-fluid">
-            </div>
-            <div>
-              <h3 class="card-title">Hotel Milano centrale</h3>
-              <p>Via Friuli 84, Milano 20135</p>
-            </div>
-            <a href="#"><i class="far fa-plus-circle"></i></a>
-          </div>
-          <div class="card-body">
-            <ul class="archive d-flex justify-content-between">
-              <li><img src="images/icon/sunglass_light.png" alt="icon" class="img-fluid"> 8.9</li>
-              <li><img src="images/icon/booking_light.png" alt="icon" class="img-fluid"> 8.9</li>
-              <li><img src="images/icon/tripadvisor_light.png" alt="icon" class="img-fluid"> 8.9</li>
-              <li><img src="images/icon/Flat_light.png" alt="icon" class="img-fluid"> 1240</li>
-            </ul>
-
-            <div class="option">
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <div class="room-type">
-                  <img src="images/icon/single_bed.png" alt="icon" class="img-fluid">
-                  <span>Single Room </span>
-                </div>
-                <div class="ref-status not"> Not Ref </div>
-                <div class="price">$ 312.00</span> </div>
-              </div>
-
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="room-type">
-                  <img src="images/icon/king_bed.png" alt="icon" class="img-fluid">
-                  <span> King Room </span>
-                </div>
-                <div class="ref-status"> Ref </div>
-                <div class="price">$ 312.00</span> </div>
-              </div>
-
-            </div>
-
-            <div class="hotel-info-footer text-center">
-              <a href="#" class="btn more-btn">
-                <img src="images/icon/crown.png" alt="icon" class="img-fluid">  
-                <p>Show more <i class="far fa-chevron-down"></i></p>
-              </a>
-            </div>
-          </div>
+        <div class="col-lg-6">
+          <img src="images/reputation/chart/line.png" alt="" class="img-fluid">
+          <h3 class="title">Position</h3>
+          <p>24h <strong> 7-days</strong> All time</p>
         </div>
-        <div class="card hotel-info mb-4">
-          <div class="card-header d-flex align-items-center">
-            <div class="avatar">
-              <img src="images/hotel_avatar.png" alt="hotel_avatar" class="img-fluid">
-            </div>
-            <div>
-              <h3 class="card-title">Hotel Milano centrale</h3>
-              <p>Via Friuli 84, Milano 20135</p>
-            </div>
-            <a href="#"><i class="far fa-plus-circle"></i></a>
-          </div>
-          <div class="card-body">
-            <ul class="archive d-flex justify-content-between">
-              <li><img src="images/icon/sunglass_light.png" alt="icon" class="img-fluid"> 8.9</li>
-              <li><img src="images/icon/booking_light.png" alt="icon" class="img-fluid"> 8.9</li>
-              <li><img src="images/icon/tripadvisor_light.png" alt="icon" class="img-fluid"> 8.9</li>
-              <li><img src="images/icon/Flat_light.png" alt="icon" class="img-fluid"> 1240</li>
-            </ul>
-
-            <div class="option">
-              <div class="d-flex justify-content-between align-items-center mb-3">
-                <div class="room-type">
-                  <img src="images/icon/single_bed.png" alt="icon" class="img-fluid">
-                  <span>Single Room </span>
-                </div>
-                <div class="ref-status not"> Not Ref </div>
-                <div class="price">$ 312.00</span> </div>
-              </div>
-
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="room-type">
-                  <img src="images/icon/king_bed.png" alt="icon" class="img-fluid">
-                  <span> King Room </span>
-                </div>
-                <div class="ref-status"> Ref </div>
-                <div class="price">$ 312.00</span> </div>
-              </div>
-
-            </div>
-
-            <div class="hotel-info-footer text-center">
-              <a href="#" class="btn more-btn">
-                <img src="images/icon/crown.png" alt="icon" class="img-fluid">  
-                <p>Show more <i class="far fa-chevron-down"></i></p>
-              </a>
-            </div>
-          </div>
-        </div>
-         <!-- ===//end of hotel-info section === -->
-        
-
-
-        <!-- ===//end of side widget section === -->
       </div>
 
-      <div class="col-xl-9">
-        <div class="main-data bg-white">
-          <!-- === select section start === -->
-          <div class="select-col">
-            <i class="far fa-bed-alt"></i>
-            <select class="form-select">
-              <option> Single Room </option>
-              <option> Suite Room </option>
-            </select>
-          </div>
-          <!-- ===//end of select section === -->
+      <div class="tab-analysis">
+        <nav class="nav">
+          <a class="nav-link active" href="#">
+            <i class="fad fa-bold top-icon"></i>
+            <h3 class="text-success">8.7 <sub class="text-danger"><i class="far fa-arrow-down"></i> 0.1</sub> </h3>
+          </a>
+          <a class="nav-link" href="#">
+            <i class="fab fa-airbnb top-icon"></i>
+            <h3>6.9 <sub><i class="far fa-arrow-down"></i> 1.2</sub> </h3>
+          </a>
+          <a class="nav-link" href="#">
+            <i class="fab fa-tripadvisor top-icon"></i>
+            <h3>9 <sub><i class="far fa-arrow-down"></i> 2</sub> </h3>
+          </a>
+        </nav>
+        <div class="row gx-lg-5">
+          <div class="col-lg-6 text">
+            <h3 class="title">Something went wrong</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-          
-          <!-- === line-chart-analysis section start === -->
-          <!-- this is just demo -->
-          <div class="line-chart-analysis">
-            <img src="images/chart/line_chart.png" alt="chart" class="w-100">
+            <ul>
+              <li class="d-flex align-items-center justify-content-between">
+                <p>Rooms</p>
+                <div class="d-flex align-items-center">
+                    <div class="progress">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  <span href="#"><i class="far fa-arrow-down"></i> 1.2</span>
+                </div>
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <p>Value for money</p>
+                <div class="d-flex align-items-center">
+                    <div class="progress">
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  <span href="#"><i class="far fa-arrow-down"></i> 1.2</span>
+                </div>
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <p>Cleanliness</p>
+                <div class="d-flex align-items-center">
+                    <div class="progress">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  <span href="#"><i class="far fa-arrow-down"></i> 1.2</span>
+                </div>
+              </li>
+            </ul>
           </div>
-          <!-- ===//end of line-chart-analysis section === -->
 
-          
-          <!-- === table-chart-analysis section start === -->
-          <!-- this is just demo -->
-          <div class="table-chart-analysis">
-            <img src="images/chart/table-data.png" alt="chart" class="w-100">
+          <div class="col-lg-6 chart text-center">
+            <img src="images/reputation/chart/line.png" alt="" class="img-fluid">
           </div>
-          <!-- ===//end of table-chart-analysis section === -->
-          
-          <!-- === ? section start === -->
-          <!-- ===//end of ? section === -->
         </div>
       </div>
     </div>
-  </div>
-
-
+  </section>
+  <!-- ===//end of analytics section === -->
+ 
+ 
   <!-- === ? section start === -->
   <section class="?">
 
@@ -881,7 +733,6 @@
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
-  <script src="js/chart.min.js"></script>
   <script src="js/custom.js"></script>
 </body>
 </html>
