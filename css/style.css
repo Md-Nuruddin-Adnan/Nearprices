@@ -838,6 +838,115 @@ p {
   color: #F7DD16;
 }
 
+.booking-table {
+  box-shadow: 0 2px 64px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 1199px) {
+  .booking-table {
+    margin-top: 30px;
+  }
+}
+
+.booking-table .card-body {
+  padding: 15px;
+}
+
+.booking-table .table thead {
+  background: #F5F7FA;
+}
+
+.booking-table .table thead tr td {
+  padding: 10px;
+}
+
+.booking-table .table tr td {
+  font-size: 14px;
+  color: #161558;
+}
+
+.booking-table .table tr td a {
+  margin: 3px;
+  display: inline-block;
+}
+
+.booking-table tbody::before {
+  content: "_";
+  display: block;
+  color: transparent;
+  line-height: 15px;
+  text-indent: -99999px;
+}
+
+.calendar-table {
+  box-shadow: 0 2px 64px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 1199px) {
+  .calendar-table {
+    margin-top: 30px;
+  }
+}
+
+.calendar-table .card-body {
+  padding: 15px;
+}
+
+.calendar-table .form-switch .form-check-input {
+  width: 1.6em;
+}
+
+.calendar-table .form-check-input {
+  height: 0.8em;
+  border-width: 2px;
+}
+
+.calendar-table .form-check-input:checked {
+  background-color: #42BE65;
+  border-color: #42BE65;
+}
+
+.calendar-table thead tr {
+  background: #F5F7FA;
+}
+
+.calendar-table thead tr th {
+  border-bottom: none;
+  padding: 10px;
+}
+
+.calendar-table thead tr td {
+  border-bottom: none;
+  color: #161558;
+  padding: 10px;
+}
+
+.calendar-table thead tr .header-action {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.calendar-table thead tr .header-action a {
+  color: #8E93A8;
+}
+
+.calendar-table tbody::before {
+  content: "_";
+  display: block;
+  color: transparent;
+  line-height: 15px;
+  text-indent: -99999px;
+}
+
+.calendar-table .accordion-button {
+  color: #2953C0;
+}
+
+.calendar-table .accordion-button.collapsed {
+  color: #161558;
+}
+
 .tooltip.bs-tooltip-top .tooltip-arrow::before {
   border-top-color: #fff;
   box-shadow: 0 10px 20px rgba(22, 21, 88, 0.2);
@@ -936,7 +1045,7 @@ p {
 }
 
 /*===// end of component === */
-/*=== pages section start === */
+/*=== pages start === */
 #home {
   background: url(../images/home_bg.png) no-repeat right center/cover;
   min-height: 100vh;
@@ -1519,7 +1628,93 @@ p {
   margin-bottom: 20px;
 }
 
-/*===// end of pages section === */
+.channel-manager .header .input-select-group,
+.channel-manager .header .option-btn {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .channel-manager .header .input-select-group,
+  .channel-manager .header .option-btn {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    place-items: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .channel-manager .header .input-select-group,
+  .channel-manager .header .option-btn {
+    grid-template-columns: repeat(4, 150px);
+  }
+}
+
+.channel-manager .header .input-select-group .btn-white,
+.channel-manager .header .option-btn .btn-white {
+  max-width: 200px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8E93A8;
+  padding: 0 10px;
+  display: block;
+  text-align: left;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+@media (max-width: 1199px) {
+  .channel-manager .header .input-select-group .btn-white,
+  .channel-manager .header .option-btn .btn-white {
+    max-width: 100%;
+  }
+}
+
+.channel-manager .header .input-select-group .btn-white i,
+.channel-manager .header .option-btn .btn-white i {
+  padding-right: 5px;
+}
+
+.channel-manager .header .input-select-group .btn-white.active, .channel-manager .header .input-select-group .btn-white:hover,
+.channel-manager .header .option-btn .btn-white.active,
+.channel-manager .header .option-btn .btn-white:hover {
+  background: #2953C0;
+  color: #fff;
+}
+
+.channel-manager .header .input-select-group .form-select {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+}
+
+.channel-manager .header ul li {
+  font-size: 16px;
+  color: #8E93A8;
+}
+
+.channel-manager .header .btn-submit {
+  max-width: 200px;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  line-height: 40px;
+  border-radius: 5px;
+}
+
+@media (max-width: 991px) {
+  .channel-manager .header .btn-submit {
+    max-width: 100%;
+  }
+}
+
+/*===// end of pages === */
 /*=== signIn-6 section start === */
 @media (min-width: 1200px) {
   #signIn-6 .side-widget.col-xl-3 {
