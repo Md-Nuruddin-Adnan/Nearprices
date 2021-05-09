@@ -351,20 +351,45 @@ p {
 
 
 // sidebar sticky scroll start
-.sidebar-item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+@media(min-width: 1200px){
+  .sidebar-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-.make-me-sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 100px;
-  padding: 0 10px;
-  max-height: 100vh;
-  overflow-y: auto;
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey; 
+      border-radius: 10px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: rgba(#8E93A8, 0.5); 
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: gray; 
+    }
+  }
+
+  .make-me-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+    padding: 0 10px;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
 }
 // sidebar sticky scroll end
