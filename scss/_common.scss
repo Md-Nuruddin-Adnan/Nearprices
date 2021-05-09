@@ -232,7 +232,6 @@ p {
     color: $color-white;
     font-size: 50px;
     visibility: hidden;
-    transition: all 0.3s linear;
   }
 
   .card-header {
@@ -322,7 +321,7 @@ p {
     }
   }
 
-  &.plus-active {
+  &:hover.plus-active {
     background: #B2C1E8;
 
     .link {
@@ -334,7 +333,7 @@ p {
     }
   }
 
-  &.minus-active {
+  &:hover.minus-active {
     background: #e8b2b2;
 
     .link {
@@ -349,3 +348,23 @@ p {
 }
 // card.hotel-info end
 // card end
+
+
+// sidebar sticky scroll start
+.sidebar-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.make-me-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  padding: 0 10px;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+// sidebar sticky scroll end

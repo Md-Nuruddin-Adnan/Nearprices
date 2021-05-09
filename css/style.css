@@ -309,7 +309,6 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
   color: #fff;
   font-size: 50px;
   visibility: hidden;
-  transition: all 0.3s linear;
 }
 
 .card.hotel-info .card-header {
@@ -401,28 +400,44 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
   margin-top: -20px;
 }
 
-.card.hotel-info.plus-active {
+.card.hotel-info:hover.plus-active {
   background: #B2C1E8;
 }
 
-.card.hotel-info.plus-active .link {
+.card.hotel-info:hover.plus-active .link {
   visibility: visible;
 }
 
-.card.hotel-info.plus-active .card-header {
+.card.hotel-info:hover.plus-active .card-header {
   background: #B2C1E8;
 }
 
-.card.hotel-info.minus-active {
+.card.hotel-info:hover.minus-active {
   background: #e8b2b2;
 }
 
-.card.hotel-info.minus-active .link {
+.card.hotel-info:hover.minus-active .link {
   visibility: visible;
 }
 
-.card.hotel-info.minus-active .card-header {
+.card.hotel-info:hover.minus-active .card-header {
   background: #e8b2b2;
+}
+
+.sidebar-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.make-me-sticky {
+  position: sticky;
+  top: 100px;
+  padding: 0 10px;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 /*===// end of common css === */
