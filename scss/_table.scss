@@ -51,6 +51,41 @@
 }
 
 
+// Dashboard table start
+.dashboard-table {
+
+  ::-webkit-scrollbar {
+    height: 4px;  
+    width: 4px;       
+    border: 1px solid #d5d5d5;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #eeeeee;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background: #b0b0b0;
+  }
+  
+  text-align: center;
+
+  tr th:first-child,
+  tr td:first-child{
+    position: sticky;
+    left: 0;
+    background: $color-white;
+    z-index: 999;
+    text-align: left;
+  }
+
+  
+}
+// Dashboard table end
+
+
 // booking table start
 .booking-table {
   box-shadow: 0 2px 64px rgba(0, 0, 0, 0.05);
