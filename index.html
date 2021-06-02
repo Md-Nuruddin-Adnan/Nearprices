@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand navbar-light bg-white">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img src="images/logo.png" alt="logo" class="img-fluid">
+          <img src="images/bhoost_logo.svg" alt="logo" class="img-fluid">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -26,55 +26,443 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item me-3">
-              <a class="nav-link" href="#"><img src="images/flag.png" alt="flag"></a>
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#tutorial-page"><i class="fab fa-youtube"></i> <span>Tutorial</span></a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link flag" href="#" data-bs-toggle="modal" data-bs-target="#languageModal">
+                <img src="images/flag.png" alt="flag" class="img-fluid language-flag">
+              </a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-lg btn-success" href="#">FREE</a>
+              <a class="btn btn-lg btn-success" href="#">LOGIN</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <!-- ===//end of header section === -->
  
+
+  <!--=== language Modal start ===-->
+  <div class="modal fade" id="languageModal" tabindex="-1" aria-labelledby="languageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="languageModalLabel">Select your language</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <h3 class="title">Suggested for you</h3>
+          <ul>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_1.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_2.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_3.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_4.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_5.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_6.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+          </ul>
+          
+          <h3 class="title mt-4">All languages</h3>
+          <ul>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_1.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_2.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_3.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_4.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_5.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_6.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_1.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_2.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_3.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_4.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_5.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_6.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="active">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_1.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_2.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_3.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_4.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_5.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_6.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_1.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_2.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_3.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_4.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_5.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_6.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_5.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_6.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_1.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_2.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_3.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_4.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_5.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="text d-flex align-items-center">
+                  <img src="images/country_flag/lan_6.png" alt="flag">
+                  English (UK)
+                </div>
+                <i class="far fa-check"></i>
+              </a>
+            </li>
+          </ul>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--//=== end language modal ===-->
+
+   <!--=== tutorial Modal start ===-->
+  <div class="modal fade" id="tutorial-page" tabindex="-1" aria-labelledby="tutorial-page" style="display: none;" aria-hidden="true">
+	  <div class="modal-dialog modal-xl">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="policy-page">Tutorial</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		  </div>
+		  <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe width="100%" height="500" id="tutorialVideo" class="embed-responsive-item" src="//www.youtube.com/embed/zONjotWLDMU" allowfullscreen="" __idm_id__="176224257"></iframe>
+        </div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  <!--//=== end tutorial modal ===-->
+  <!-- ===//end of header section === -->
+
+
 
   <!-- === banner section start === -->
   <section class="banner">
     <div class="banner-content">
       <div class="container">
-        <div class="row text-center">
-          <div class="col-xl-8 m-auto">
-            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="row gx-xl-5">
+          <div class="col-xl-6">
+            <h1>Monitor your competitors prices in real time</h1>
+            <p>
+              Bhoost helps you compare the prices of your property with those of your competitors. All prices are taken in real time so you can know at any time as optimizing your prices.
+              <br><br>
+              Try the free version now, you don't need any credit card.
+            </p>
           </div>
-        </div>
-        <div class="booking-form shadow">
-          <form action="">
-            <div class="row">
-              <div class="col-lg-3 mb-lg-0 mb-3">
-                <input type="search" class="form-control" placeholder="Enter your Hotel name">
-              </div>
-              <div class="col-lg-3 mb-lg-0 mb-3">
-                <input type="text" id="dateRange" class="form-control" value="">
-              </div>
-              <div class="col-lg-2 mb-lg-0 mb-3">
-                <select class="form-select">
+          <div class="col-xl-6">
+            <div class="booking-form shadow">
+              <form action="">
+                <label>Find your property</label>
+                <input type="text" class="form-control mb-4 mt-2" placeholder="Enter the name of your property">
+
+                <label>Select the range of dates to be compared</label>
+                <span>min 7 max 15 days</span>
+                <input type="text" class="form-control mb-4 mt-2" placeholder="Select dates">
+
+                <label>Select the currency in which to see prices</label>
+                <select class="form-select mb-4 mt-2">
                   <option selected>Currency</option>
                   <option>...</option>
                 </select>
-              </div>
-              <div class="col-lg-2 mb-lg-0 mb-3">
-                <select class="form-select">
-                  <option selected>English</option>
-                  <option>...</option>
-                </select>
-              </div>
-              <div class="col-lg-2 mb-lg-0 mb-3">
+
                 <button type="submit" class="btn btn-primary w-100">Confirm</button>
-              </div>
+              </form>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -92,7 +480,7 @@
   <footer class="footer">
     <div class="container-fluid">
       <div class="footer-top mb-lg-0 mb-3">
-        <img src="images/logo.png" alt="logo" class="img-fluid">
+        <img src="images/bhoost_logo.svg" alt="logo" class="img-fluid">
       </div>
       <div class="footer-bottom d-lg-flex justify-content-between">
         <div class="left d-lg-flex">

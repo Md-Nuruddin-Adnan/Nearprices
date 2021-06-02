@@ -1145,16 +1145,41 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
   z-index: -1;
 }
 
+#home .navbar .nav-item .nav-link {
+  color: #161558;
+}
+
+#home .navbar .nav-item .nav-link .language-flag {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: -4px 0 0 0;
+}
+
+#home .navbar .nav-item .btn.btn-lg {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 2px 10px;
+  border-radius: 5px;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
 #home .banner .banner-content h1 {
   font-size: 54px;
   color: #161558;
   font-weight: 700;
-  padding-top: 50px;
 }
 
 @media (max-width: 575px) {
   #home .banner .banner-content h1 {
     font-size: 35px;
+  }
+}
+
+@media (max-width: 1199px) {
+  #home .banner .banner-content h1 {
+    padding-top: 40px;
   }
 }
 
@@ -1164,25 +1189,37 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
   padding: 20px 0 30px 0;
 }
 
-#home .booking-form {
+#home .banner .booking-form {
   background: #fff;
   padding: 35px;
   border-radius: 10px;
 }
 
-@media (min-width: 992px) {
-  #home .booking-form {
-    width: 90%;
-    margin: auto;
-  }
+#home .banner .booking-form label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #161558;
+  display: block;
+  margin-bottom: 0;
 }
 
-#home .booking-form .form-control, #home .booking-form .form-select {
+#home .banner .booking-form span {
+  font-size: 10px;
+  font-weight: normal;
+  display: block;
+}
+
+#home .banner .booking-form .form-control, #home .banner .booking-form .form-select {
   padding: 10px 15px;
 }
 
-#home .booking-form .btn-primary {
-  padding: 10px;
+#home .banner .booking-form .btn-primary {
+  padding: 12px 10px;
+  background: #161558;
+}
+
+#home .footer .footer-top img {
+  max-width: 100px;
 }
 
 @media (min-width: 1200px) {
@@ -1192,6 +1229,14 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
     bottom: 0px;
     left: 0;
   }
+}
+
+#home .footer .footer-bottom .right ul li a, #reputation .hotel-details .accordion li #home .footer .footer-bottom .right ul .btn a {
+  color: #161558;
+}
+
+#home .footer .footer-bottom .right ul li a:hover, #reputation .hotel-details .accordion li #home .footer .footer-bottom .right ul .btn a:hover {
+  color: #2953C0;
 }
 
 .loader-body {
