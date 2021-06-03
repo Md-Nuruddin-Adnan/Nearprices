@@ -1,5 +1,6 @@
 /*=== global css start === */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -1126,117 +1127,449 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
 /*===// end of component === */
 /*=== pages start === */
 #home {
-  background: url(../images/home_bg.png) no-repeat right center/cover;
-  min-height: 100vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  background: #2953C0;
 }
 
-#home:before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.8);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+#home .btn.btn-blue {
+  border-radius: 8px;
+  background-color: #2953C0;
+  color: #fff;
+  border: 1px solid #fff;
+  min-width: 120px;
 }
 
-#home .navbar .nav-item .nav-link {
-  color: #161558;
+#home .btn.btn-blue:hover {
+  background-color: #161558;
+  border: 1px solid #161558;
 }
 
-#home .navbar .nav-item .nav-link .language-flag {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin: -4px 0 0 0;
+#home .btn-primary {
+  border-radius: 8px;
+  background-color: #161558;
+  color: #fff;
+  border: 1px solid #161558;
+  min-width: 120px;
 }
 
-#home .navbar .nav-item .btn.btn-lg {
-  font-size: 12px;
-  font-weight: 400;
-  padding: 2px 10px;
-  border-radius: 5px;
-  margin-top: 7px;
-  margin-left: 5px;
+#home .btn-primary:hover {
+  background-color: #2953C0;
+  border: 1px solid #2953C0;
 }
 
-#home .banner .banner-content h1 {
-  font-size: 54px;
-  color: #161558;
-  font-weight: 700;
+#home .sec-title {
+  font-size: 55px;
+  font-weight: 800;
+  color: #fff;
+  white-space: pre-line;
+  text-transform: capitalize;
 }
 
 @media (max-width: 575px) {
-  #home .banner .banner-content h1 {
+  #home .sec-title {
     font-size: 35px;
   }
 }
 
 @media (max-width: 1199px) {
-  #home .banner .banner-content h1 {
+  #home .sec-title {
     padding-top: 40px;
   }
 }
 
-#home .banner .banner-content p, #home .banner .banner-content #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li #home .banner .banner-content p, #home .banner .banner-content #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn #home .banner .banner-content p {
+#home .navbar {
+  box-shadow: none;
+  padding: 25px 0;
+}
+
+#home .navbar .nav-item .nav-link {
+  color: #fff;
+}
+
+#home .navbar .nav-item .nav-link:hover {
+  color: #cccccc;
+}
+
+#home .banner {
+  padding: 80px 0;
+}
+
+@media (min-width: 1400px) {
+  #home .banner .banner-content .text {
+    padding-right: 100px;
+  }
+}
+
+#home .banner .banner-content .text h1 {
+  font-size: 55px;
+  color: #fff;
+  font-weight: 900;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 575px) {
+  #home .banner .banner-content .text h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1199px) {
+  #home .banner .banner-content .text h1 {
+    padding-top: 40px;
+  }
+}
+
+#home .banner .banner-content .text p {
   font-size: 20px;
-  color: #161558;
-  padding: 20px 0 30px 0;
+  color: #fff;
+  font-weight: 300;
 }
 
-#home .banner .booking-form {
-  background: #fff;
-  padding: 35px;
-  border-radius: 10px;
+#home .banner .banner-content .text p span {
+  opacity: 0.6;
 }
 
-#home .banner .booking-form label {
-  font-size: 18px;
-  font-weight: 700;
-  color: #161558;
+#home .banner .banner-content .video {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#home .analysis-form {
+  overflow: hidden;
+}
+
+@media (min-width: 1400px) {
+  #home .analysis-form .col-xxl-10 {
+    width: 88%;
+  }
+  #home .analysis-form .col-xxl-2 {
+    width: 12%;
+  }
+}
+
+#home .analysis-form .main-form {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px;
+}
+
+#home .analysis-form .main-form .form-title {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#home .analysis-form .main-form label {
   display: block;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+#home .analysis-form .main-form span {
+  color: #fff;
+  font-size: 14px;
+}
+
+#home .analysis-form .main-form .form-control, #home .analysis-form .main-form .form-select {
+  height: 45px;
+}
+
+#home .analysis-form .main-form .btn-primary {
+  height: 45px;
+  margin-top: 28px;
+}
+
+#home .analysis-form .chat {
+  background: rgba(22, 21, 88, 0.2);
+  height: 100%;
+  text-align: center;
+  padding: 30px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#home .analysis-form .chat .chat-heading {
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 1399px) {
+  #home .analysis-form .chat .chat-heading {
+    padding: 30px 15px;
+  }
+}
+
+#home .analysis-form .chat p, #home .analysis-form .chat #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li #home .analysis-form .chat p, #home .analysis-form .chat #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn #home .analysis-form .chat p {
+  color: #fff;
+  font-size: 14px;
+}
+
+#home .analysis-form .chat img {
+  width: 80px;
+}
+
+@media (min-width: 1400px) {
+  #home .analysis-form .chat img {
+    margin: auto;
+  }
+}
+
+#home .scroll-down {
+  text-align: center;
+  padding: 30px 0 40px 0;
+}
+
+#home .scroll-down p, #home .scroll-down #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li #home .scroll-down p, #home .scroll-down #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn #home .scroll-down p {
+  color: #fff;
+}
+
+#home .why-use {
+  padding: 40px 0 80px 0;
+}
+
+#home .why-use .item {
+  background-image: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0.1));
+  border-radius: 25px;
+  padding: 1px;
+}
+
+#home .why-use .item:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+#home .why-use .item .content {
+  border-radius: inherit;
+  background: #2953C0;
+  padding: 30px 20px;
+}
+
+#home .why-use .item .content i {
+  font-size: 40px;
+  background: -webkit-linear-gradient(300deg, #fff, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#home .why-use .item .content .heading {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+  padding: 15px 0 20px 0;
+}
+
+#home .why-use .item .content p {
+  color: #fff;
+  font-size: 16px;
+}
+
+#home .easy-use {
+  background: #fff url(../images/index/analytic-bg.png) no-repeat top left;
+  padding: 100px 0;
+}
+
+@media (max-width: 1199px) {
+  #home .easy-use {
+    background: #fff;
+  }
+}
+
+#home .easy-use .video {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#home .easy-use .text .sec-title {
+  color: #161558;
+}
+
+#home .easy-use .text p, #home .easy-use #reputation .hotel-details .text ul li p, #reputation .hotel-details #home .easy-use .text ul li p, #home .easy-use #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li #home .easy-use .text ul .btn p {
+  color: #161558;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#home .easy-use .text .try-free span {
+  color: #161558;
+}
+
+#home .features {
+  padding-bottom: 80px;
+}
+
+#home .features .date-item {
+  background: #2953C0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 40px;
+}
+
+#home .features .date-item::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+@media (min-width: 1400px) {
+  #home .features .date-item::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  #home .features .date-item.no-line::after {
+    width: 0%;
+  }
+}
+
+#home .features .item .content {
+  border-radius: inherit;
+  background: #2953C0;
+}
+
+#home .features .item .content i {
+  font-size: 40px;
+  background: -webkit-linear-gradient(300deg, #fff, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#home .features .item .content .heading {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+  padding: 15px 0 20px 0;
+}
+
+#home .features .item .content p {
+  color: #fff;
+  font-size: 16px;
+}
+
+#home .package-section {
+  padding: 80px 0;
+}
+
+#home .package-section .packages .card {
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(22, 21, 88, 0.2);
+  height: 100%;
+}
+
+#home .package-section .packages .card .title {
+  font-size: 35px;
+  font-weight: 800;
+  color: #161558;
+  text-align: center;
   margin-bottom: 0;
 }
 
-#home .banner .booking-form span {
-  font-size: 10px;
-  font-weight: normal;
-  display: block;
+#home .package-section .packages .card .price {
+  font-size: 45px;
+  font-weight: 800;
+  color: #161558;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-#home .banner .booking-form .form-control, #home .banner .booking-form .form-select {
-  padding: 10px 15px;
+#home .package-section .packages .card .price sub,
+#home .package-section .packages .card .price sup {
+  font-size: 20px;
+  font-weight: 800;
+  color: #161558;
 }
 
-#home .banner .booking-form .btn-primary {
+#home .package-section .packages .card ul {
+  padding-left: 1rem;
+}
+
+#home .package-section .packages .card ul li, #home .package-section .packages .card ul #reputation .hotel-details .accordion li .btn, #reputation .hotel-details .accordion li #home .package-section .packages .card ul .btn {
+  font-size: 20px;
+  color: #161558;
+  padding: 3px 0;
+}
+
+#home .package-section .packages .card ul li i, #reputation .hotel-details .accordion li #home .package-section .packages .card ul .btn i {
+  padding-right: 5px;
+  font-size: 20px;
+}
+
+#home .package-section .packages .card ul li i.fa-check-circle, #reputation .hotel-details .accordion li #home .package-section .packages .card ul .btn i.fa-check-circle {
+  color: #42BE65;
+}
+
+#home .package-section .packages .card ul li i.fa-times-circle, #reputation .hotel-details .accordion li #home .package-section .packages .card ul .btn i.fa-times-circle {
+  color: #FC3F38;
+}
+
+#home .package-section .packages .card .btn-lg {
   padding: 12px 10px;
-  background: #161558;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+#home .package-section .packages .card.transparen-card {
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+#home .package-section .packages .card.transparen-card ul li, #home .package-section .packages .card.transparen-card ul #reputation .hotel-details .accordion li .btn, #reputation .hotel-details .accordion li #home .package-section .packages .card.transparen-card ul .btn,
+#home .package-section .packages .card.transparen-card .title, #home .package-section .packages .card.transparen-card .price, #home .package-section .packages .card.transparen-card sup, #home .package-section .packages .card.transparen-card sub {
+  color: #fff;
+}
+
+#home .newsletter {
+  padding-bottom: 80px;
+}
+
+#home .newsletter .main-form {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+#home .newsletter .main-form .form-control, #home .newsletter .main-form .btn {
+  height: 45px;
+}
+
+#home .footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px 0;
 }
 
 #home .footer .footer-top img {
   max-width: 100px;
 }
 
-@media (min-width: 1200px) {
-  #home .footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    left: 0;
-  }
+#home .footer .footer-bottom p, #home .footer .footer-bottom #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li #home .footer .footer-bottom p, #home .footer .footer-bottom #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn #home .footer .footer-bottom p {
+  color: #fff;
 }
 
 #home .footer .footer-bottom .right ul li a, #reputation .hotel-details .accordion li #home .footer .footer-bottom .right ul .btn a {
-  color: #161558;
+  color: #fff;
 }
 
 #home .footer .footer-bottom .right ul li a:hover, #reputation .hotel-details .accordion li #home .footer .footer-bottom .right ul .btn a:hover {
-  color: #2953C0;
+  color: #161558;
 }
 
 .loader-body {
