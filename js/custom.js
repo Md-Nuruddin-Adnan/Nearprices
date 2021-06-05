@@ -100,5 +100,3 @@ $('#dateRange').daterangepicker({
 
 }
 // setting collapse end
-
-

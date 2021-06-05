@@ -1192,7 +1192,7 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
 }
 
 #home .banner {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 @media (min-width: 1400px) {
@@ -1240,7 +1240,14 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
   overflow: hidden;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
+  #home .analysis-form {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }
   #home .analysis-form .col-xxl-10 {
     width: 88%;
   }
@@ -1250,7 +1257,7 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
 }
 
 #home .analysis-form .main-form {
-  background: rgba(255, 255, 255, 0.2);
+  background: #5475CD;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 30px;
 }
@@ -1282,7 +1289,7 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
 }
 
 #home .analysis-form .chat {
-  background: rgba(22, 21, 88, 0.2);
+  background: #2546AC;
   height: 100%;
   text-align: center;
   padding: 30px 0;
@@ -1294,7 +1301,7 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
   font-weight: 600;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1199px) {
   #home .analysis-form .chat .chat-heading {
     padding: 30px 15px;
   }
@@ -1320,8 +1327,29 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
   padding: 30px 0 40px 0;
 }
 
+#home .scroll-down .fa-mouse-alt {
+  font-size: 40px;
+  color: #fff;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+}
+
 #home .scroll-down p, #home .scroll-down #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li #home .scroll-down p, #home .scroll-down #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn #home .scroll-down p {
   color: #fff;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 #home .why-use {
@@ -1570,6 +1598,12 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
 
 #home .footer .footer-bottom .right ul li a:hover, #reputation .hotel-details .accordion li #home .footer .footer-bottom .right ul .btn a:hover {
   color: #161558;
+}
+
+@media (min-width: 1200px) {
+  #home .footer {
+    margin-bottom: 200px;
+  }
 }
 
 .loader-body {
