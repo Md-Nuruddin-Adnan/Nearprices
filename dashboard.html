@@ -849,57 +849,66 @@
         <button id="btn-collapse" class="btn btn-collapse"><i class="far fa-chevron-left"></i></button>
         <div class="dashboard-content bg-white">
           <!-- === form section start === -->
-          <form action="" class="d-lg-flex w-100 justify-content-between align-items-center dashboard-form">
-            <div class="input-item">
-              <div class="row">
-                <div class="col-lg-6 position-relative">
-                  <div class="row">
-                    <div class="col-lg-6 position-relative">
-                      <select class="form-select form-select-lg mb-lg-0 mb-3">
-                        <option selected="">Period</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
+          <button class="accordion-button search-accordion-btn mb-4 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#form-accordion" aria-expanded="true" aria-controls="form-accordion">Search</button>
+
+          <div id="form-accordion" class="accordion-collapse collapse show">
+            <form class="d-lg-flex w-100 justify-content-between align-items-center dashboard-form">
+              <div class="input-item">
+                <div class="row">
+                  <div class="col-lg-6 position-relative">
+                    <div class="row">
+                      <div class="col-lg-6 position-relative">
+                        <select class="form-select form-select-lg mb-lg-0 mb-3">
+                          <option selected="">Period</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <span class="badge bg-danger">Pro</span>
+                      </div>
+                      <div class="col-lg-6 position-relative">
+                        <i class="far fa-bed-alt"></i>
+                        <select class="form-select form-select-lg mb-lg-0 mb-3 ps-30">
+                          <option> Single Room </option>
+                          <option> Suite Room </option>
+                        </select>
+                        <span class="badge bg-danger">Pro</span>
+                      </div>
                     </div>
-                    <div class="col-lg-6 position-relative">
-                      <i class="far fa-bed-alt"></i>
-                      <select class="form-select form-select-lg mb-lg-0 mb-3 ps-30">
-                        <option> Single Room </option>
-                        <option> Suite Room </option>
-                      </select>
+                  </div>
+                  <div class="col-lg-6 position-relative">
+                    <div class="row">
+                      <div class="col-lg-3 position-relative">
+                        <i class="fal fa-user-friends"></i>
+                        <select class="form-select form-select-lg mb-lg-0 mb-3 ps-30">
+                          <option> 1 </option>
+                          <option selected=""> 2 </option>
+                        </select>
+                        <span class="badge bg-danger">Pro</span>
+                      </div>
+                      <div class="col-lg-6 position-relative">
+                        <select class="form-select form-select-lg mb-lg-0 mb-3">
+                          <option selected=""> Refundable </option>
+                          <option> Non Refundable </option>
+                        </select>
+                        <span class="badge bg-danger">Pro</span>
+                      </div>
+                      <div class="col-lg-3 position-relative">
+                        <select class="form-select form-select-lg mb-lg-0 mb-3">
+                          <option selected=""> HB </option>
+                          <option> Non HB </option>
+                        </select>
+                        <span class="badge bg-danger">Pro</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 position-relative">
-                  <div class="row">
-                    <div class="col-lg-3 position-relative">
-                      <i class="fal fa-user-friends"></i>
-                      <select class="form-select form-select-lg mb-lg-0 mb-3 ps-30">
-                        <option> 1 </option>
-                        <option selected=""> 2 </option>
-                      </select>
-                    </div>
-                    <div class="col-lg-6 position-relative">
-                      <select class="form-select form-select-lg mb-lg-0 mb-3">
-                        <option selected=""> Refundable </option>
-                        <option> Non Refundable </option>
-                      </select>
-                    </div>
-                    <div class="col-lg-3 position-relative">
-                      <select class="form-select form-select-lg mb-lg-0 mb-3">
-                        <option selected=""> HB </option>
-                        <option> Non HB </option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
+              </div>   
+              <div class="btn-box">
+                <button class="btn btn-lg btn-primary"><i class="far fa-search"></i> Find</button>
               </div>
-            </div>   
-            <div class="btn-box">
-              <button class="btn btn-lg btn-primary"><i class="far fa-search"></i> Find</button>
-            </div>
-          </form>
+            </form>
+          </div>
           <!-- ===//end of form section === -->
 
           

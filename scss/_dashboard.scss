@@ -1,5 +1,11 @@
 .dashboard-content {
   padding: 30px;
+
+  .search-accordion-btn {
+    font-weight: 700;
+    border-radius: 10px;
+  }
+  
   .dashboard-form {
 
     .input-item {
@@ -17,6 +23,14 @@
         @media (max-width: 991px){
           top: 35%;
         }
+      }
+
+      .badge{
+        position: absolute;
+        top: -10px;
+        right: 0;
+        font-weight: 400;
+        border-radius: 10px;
       }
 
     }

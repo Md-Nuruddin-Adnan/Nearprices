@@ -1642,6 +1642,11 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
   padding: 30px;
 }
 
+.dashboard-content .search-accordion-btn {
+  font-weight: 700;
+  border-radius: 10px;
+}
+
 .dashboard-content .dashboard-form .input-item {
   width: 80%;
 }
@@ -1664,6 +1669,14 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
   .dashboard-content .dashboard-form .input-item i {
     top: 35%;
   }
+}
+
+.dashboard-content .dashboard-form .input-item .badge {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  font-weight: 400;
+  border-radius: 10px;
 }
 
 .dashboard-content .dashboard-form .btn-lg {

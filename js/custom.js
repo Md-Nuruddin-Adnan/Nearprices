@@ -100,3 +100,21 @@ $('#dateRange').daterangepicker({
 
 }
 // setting collapse end
+
+// dashboard form hide on mobile start
+{
+    const form = document.getElementById("form-accordion");
+    let x = window.matchMedia("(max-width: 991px)");
+
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+          form.classList.remove("show");
+        } else {
+            form.classList.add("show");
+        }
+      }
+      
+      myFunction(x) // Call listener function at run time
+      x.addListener(myFunction) // Attach listener function on state changes
+}
+// dashboard form hide on mobile end
