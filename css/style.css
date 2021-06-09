@@ -475,12 +475,15 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
 
 .navbar .info-header .avatar {
   margin-right: 10px;
-}
-
-.navbar .info-header .avatar img {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+}
+
+.navbar .info-header .avatar img {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
 }
 
 .navbar .info-header .card-title {
@@ -488,6 +491,7 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
   color: #161558;
   font-weight: 700;
   margin-bottom: 0;
+  white-space: nowrap;
 }
 
 .navbar .info-header p, .navbar .info-header #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul li .navbar .info-header p, .navbar .info-header #reputation .hotel-details .accordion li .text ul .btn p, #reputation .hotel-details .accordion li .text ul .btn .navbar .info-header p {
@@ -544,7 +548,7 @@ p, #reputation .hotel-details .text ul li p, #reputation .hotel-details .text ul
   padding-left: 10px;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1199px) {
   .navbar.navbar-details .navbar-nav {
     flex-direction: row;
     margin-left: 0;
